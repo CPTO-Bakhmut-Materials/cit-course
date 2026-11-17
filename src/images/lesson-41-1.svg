@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" width="100%" height="auto" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="380" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="400" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Рівні регламентного обслуговування та вікно робіт</text>
+
+  <!-- Tier 1: Daily -->
+  <rect x="24" y="56" width="176" height="128" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.8"/>
+  <text x="112" y="80" text-anchor="middle" font-size="14" font-weight="700" fill="#1e3a8a">Щоденний (Daily)</text>
+  <text x="36" y="104" font-size="12" fill="#172554">• Статус бекапів</text>
+  <text x="36" y="124" font-size="12" fill="#172554">• Диски (контроль &lt; 85%)</text>
+  <text x="36" y="144" font-size="12" fill="#172554">• Стан служб (systemd)</text>
+  <text x="36" y="164" font-size="12" fill="#172554">• Помилки в журналі</text>
+
+  <!-- Tier 2: Weekly -->
+  <rect x="216" y="56" width="176" height="128" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
+  <text x="304" y="80" text-anchor="middle" font-size="14" font-weight="700" fill="#166534">Щотижневий</text>
+  <text x="228" y="104" font-size="12" fill="#052e16">• Перевірка RAID і S.M.A.R.T.</text>
+  <text x="228" y="124" font-size="12" fill="#052e16">• Пікові навантаження</text>
+  <text x="228" y="144" font-size="12" fill="#052e16">• Оновлення безпеки</text>
+  <text x="228" y="164" font-size="12" fill="#052e16">• Ротація лог-файлів</text>
+
+  <!-- Tier 3: Monthly -->
+  <rect x="408" y="56" width="176" height="128" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="496" y="80" text-anchor="middle" font-size="14" font-weight="700" fill="#92400e">Щомісячний</text>
+  <text x="420" y="104" font-size="12" fill="#451a03">• Тест відновлення БД</text>
+  <text x="420" y="124" font-size="12" fill="#451a03">• Очищення кешів (apt)</text>
+  <text x="420" y="144" font-size="12" fill="#451a03">• Патчі операційної ОС</text>
+  <text x="420" y="164" font-size="12" fill="#451a03">• Самотест ДБЖ (UPS)</text>
+
+  <!-- Tier 4: Quarterly / Annual -->
+  <rect x="600" y="56" width="176" height="128" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="688" y="80" text-anchor="middle" font-size="14" font-weight="700" fill="#991b1b">Квартальний / Річний</text>
+  <text x="612" y="104" font-size="12" fill="#450a0a">• Знепилення серверів</text>
+  <text x="612" y="124" font-size="12" fill="#450a0a">• Заміна кулерів, пасти</text>
+  <text x="612" y="144" font-size="12" fill="#450a0a">• Ревізія кабелів і прав</text>
+  <text x="612" y="164" font-size="12" fill="#450a0a">• Тренування DR-плану</text>
+
+  <!-- Arrows down -->
+  <line x1="112" y1="184" x2="112" y2="210" stroke="#475569" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <line x1="304" y1="184" x2="304" y2="210" stroke="#475569" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <line x1="496" y1="184" x2="496" y2="210" stroke="#475569" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <line x1="688" y1="184" x2="688" y2="210" stroke="#475569" stroke-width="1.8" marker-end="url(#arrow)"/>
+
+  <!-- Maintenance Window Container -->
+  <rect x="24" y="216" width="752" height="142" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="400" y="240" text-anchor="middle" font-size="14" font-weight="700" fill="#334155">Технологічне вікно обслуговування (Maintenance Window, напр. Нд 02:00–05:00)</text>
+
+  <!-- Step 1 -->
+  <rect x="40" y="256" width="156" height="84" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="118" y="280" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1e3a8a">1. Попередження</text>
+  <text x="118" y="300" text-anchor="middle" font-size="11.5" fill="#172554">Сповіщення за 24 год</text>
+  <text x="118" y="318" text-anchor="middle" font-size="11.5" fill="#172554">до початку робіт</text>
+
+  <line x1="196" y1="298" x2="224" y2="298" stroke="#475569" stroke-width="1.8" marker-end="url(#arrow)"/>
+
+  <!-- Step 2 -->
+  <rect x="228" y="256" width="156" height="84" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="306" y="280" text-anchor="middle" font-size="12.5" font-weight="700" fill="#166534">2. Бекап і Rollback</text>
+  <text x="306" y="300" text-anchor="middle" font-size="11.5" fill="#052e16">Свіжа резервна копія</text>
+  <text x="306" y="318" text-anchor="middle" font-size="11.5" fill="#052e16">та план відкату</text>
+
+  <line x1="384" y1="298" x2="412" y2="298" stroke="#475569" stroke-width="1.8" marker-end="url(#arrow)"/>
+
+  <!-- Step 3 -->
+  <rect x="416" y="256" width="156" height="84" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="494" y="280" text-anchor="middle" font-size="12.5" font-weight="700" fill="#92400e">3. Виконання робіт</text>
+  <text x="494" y="300" text-anchor="middle" font-size="11.5" fill="#451a03">Оновлення ядра, RAID,</text>
+  <text x="494" y="318" text-anchor="middle" font-size="11.5" fill="#451a03">перезавантаження ОС</text>
+
+  <line x1="572" y1="298" x2="600" y2="298" stroke="#475569" stroke-width="1.8" marker-end="url(#arrow)"/>
+
+  <!-- Step 4 -->
+  <rect x="604" y="256" width="156" height="84" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="682" y="280" text-anchor="middle" font-size="12.5" font-weight="700" fill="#991b1b">4. Контроль і Журнал</text>
+  <text x="682" y="300" text-anchor="middle" font-size="11.5" fill="#450a0a">Перевірка сервісів</text>
+  <text x="682" y="318" text-anchor="middle" font-size="11.5" fill="#450a0a">та запис у Журнал ТО</text>
+</svg>

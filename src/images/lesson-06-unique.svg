@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 420" width="100%" height="auto" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#475569"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#dc2626"/>
+    </marker>
+  </defs>
+
+  <rect width="820" height="420" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="410" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Верифікація достовірності: лавинний ефект SHA-256 та методи захисту</text>
+
+  <!-- Top Flow: Original Document -->
+  <text x="28" y="60" font-size="12.5" font-weight="700" fill="#166534">Еталонна перевірка цілісності документа</text>
+
+  <rect x="28" y="70" width="225" height="72" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.8"/>
+  <text x="140" y="92" text-anchor="middle" font-size="13" font-weight="700" fill="#1e3a8a">Оригінал документа</text>
+  <text x="140" y="111" text-anchor="middle" font-size="11.5" fill="#1e40af">invoice_report.txt</text>
+  <text x="140" y="129" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a">Сума: 15400.00 грн</text>
+
+  <line x1="253" y1="106" x2="296" y2="106" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="275" y="97" text-anchor="middle" font-size="10.5" font-weight="700" fill="#475569">SHA-256</text>
+
+  <rect x="302" y="70" width="236" height="72" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.8"/>
+  <text x="420" y="92" text-anchor="middle" font-size="13" font-weight="700" fill="#1e3a8a">Еталонний відбиток</text>
+  <text x="420" y="112" text-anchor="middle" font-size="12" font-family="monospace" font-weight="700" fill="#1e40af">a3f9c24b...81e40f</text>
+  <text x="420" y="130" text-anchor="middle" font-size="11" fill="#334155">64 шістнадцяткові символи</text>
+
+  <line x1="538" y1="106" x2="580" y2="106" stroke="#16a34a" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+
+  <rect x="586" y="70" width="206" height="72" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="689" y="94" text-anchor="middle" font-size="13" font-weight="700" fill="#166534">sha256sum -c → OK</text>
+  <text x="689" y="114" text-anchor="middle" font-size="11.5" fill="#14532d">Дані автентичні,</text>
+  <text x="689" y="130" text-anchor="middle" font-size="11.5" fill="#14532d">змін не виявлено</text>
+
+  <!-- Middle Flow: Tampered Document -->
+  <text x="28" y="170" font-size="12.5" font-weight="700" fill="#991b1b">Лавинний ефект при зміні лише одного символу (1 → 9)</text>
+
+  <rect x="28" y="180" width="225" height="72" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="140" y="202" text-anchor="middle" font-size="13" font-weight="700" fill="#92400e">Підмінений документ</text>
+  <text x="140" y="221" text-anchor="middle" font-size="11.5" fill="#78350f">invoice_tampered.txt</text>
+  <text x="140" y="239" text-anchor="middle" font-size="12" font-weight="700" fill="#b91c1c">Сума: 95400.00 грн</text>
+
+  <line x1="253" y1="216" x2="296" y2="216" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="275" y="207" text-anchor="middle" font-size="10.5" font-weight="700" fill="#475569">SHA-256</text>
+
+  <rect x="302" y="180" width="236" height="72" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="420" y="202" text-anchor="middle" font-size="13" font-weight="700" fill="#991b1b">Змінений відбиток</text>
+  <text x="420" y="222" text-anchor="middle" font-size="12" font-family="monospace" font-weight="700" fill="#b91c1c">7d04b8e1...c93a52</text>
+  <text x="420" y="240" text-anchor="middle" font-size="11" fill="#7f1d1d">Кардинально новий геш (&gt;50% бітів)</text>
+
+  <line x1="538" y1="216" x2="580" y2="216" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arrow-red)"/>
+
+  <rect x="586" y="180" width="206" height="72" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="689" y="204" text-anchor="middle" font-size="13" font-weight="700" fill="#991b1b">sha256sum -c → FAILED</text>
+  <text x="689" y="224" text-anchor="middle" font-size="11.5" fill="#7f1d1d">Контрольна сума не збіглася,</text>
+  <text x="689" y="240" text-anchor="middle" font-size="11.5" fill="#7f1d1d">документ скомпрометовано</text>
+
+  <!-- Divider -->
+  <line x1="28" y1="270" x2="792" y2="270" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="5 4"/>
+
+  <!-- Bottom: 3 Technical Pillars -->
+  <text x="28" y="292" font-size="12.5" font-weight="700" fill="#334155">Комплексна інженерна перевірка достовірності оператором</text>
+
+  <rect x="28" y="304" width="242" height="96" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.8"/>
+  <text x="149" y="326" text-anchor="middle" font-size="13" font-weight="700" fill="#1e3a8a">1. Гешування файлів</text>
+  <text x="42" y="348" font-size="11.5" fill="#172554">• Детермінованість результату</text>
+  <text x="42" y="366" font-size="11.5" fill="#172554">• Незворотність (One-way)</text>
+  <text x="42" y="384" font-size="11.5" fill="#172554">• Стандарт SHA-256 (замість MD5)</text>
+
+  <rect x="289" y="304" width="242" height="96" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
+  <text x="410" y="326" text-anchor="middle" font-size="13" font-weight="700" fill="#166534">2. Сертифікати SSL/TLS і КЕП</text>
+  <text x="303" y="348" font-size="11.5" fill="#052e16">• Перевірка центру (Trusted CA)</text>
+  <text x="303" y="366" font-size="11.5" fill="#052e16">• Термін дії та доменне ім'я</text>
+  <text x="303" y="384" font-size="11.5" fill="#052e16">• Юридична сила підпису (КЕП)</text>
+
+  <rect x="550" y="304" width="242" height="96" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="671" y="326" text-anchor="middle" font-size="13" font-weight="700" fill="#92400e">3. Метадані та захист</text>
+  <text x="564" y="348" font-size="11.5" fill="#451a03">• Автор, дата, редактор (EXIF/PDF)</text>
+  <text x="564" y="366" font-size="11.5" fill="#451a03">• Захист від фішингу та підмін</text>
+  <text x="564" y="384" font-size="11.5" fill="#451a03">• Звірка з еталонними базами</text>
+</svg>

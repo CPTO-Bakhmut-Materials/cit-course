@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 380" width="100%" height="auto" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#475569"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#16a34a"/>
+    </marker>
+  </defs>
+
+  <rect width="820" height="380" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="410" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Клієнт-серверна архітектура системи моніторингу Zabbix</text>
+
+  <!-- Target Server 1 -->
+  <rect x="26" y="64" width="196" height="74" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.8"/>
+  <text x="124" y="88" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1e3a8a">Цільовий сервер 1</text>
+  <rect x="48" y="98" width="152" height="28" rx="6" fill="#ffffff" stroke="#3b82f6" stroke-width="1.2"/>
+  <text x="124" y="117" text-anchor="middle" font-size="12" font-weight="600" fill="#1e40af">Zabbix Agent (демон)</text>
+
+  <!-- Target Server 2 -->
+  <rect x="26" y="158" width="196" height="74" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.8"/>
+  <text x="124" y="182" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1e3a8a">Цільовий сервер 2</text>
+  <rect x="48" y="192" width="152" height="28" rx="6" fill="#ffffff" stroke="#3b82f6" stroke-width="1.2"/>
+  <text x="124" y="211" text-anchor="middle" font-size="12" font-weight="600" fill="#1e40af">Zabbix Agent (демон)</text>
+
+  <!-- Zabbix Proxy -->
+  <rect x="26" y="264" width="196" height="78" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="124" y="289" text-anchor="middle" font-size="13.5" font-weight="700" fill="#92400e">Zabbix Proxy (опц.)</text>
+  <text x="124" y="309" text-anchor="middle" font-size="11.5" fill="#451a03">Локальний буфер збору даних</text>
+  <text x="124" y="326" text-anchor="middle" font-size="11.5" fill="#92400e">з віддалених філій</text>
+
+  <!-- Connectors from Agents & Proxy to Zabbix Server -->
+  <path d="M 222 101 L 270 101 L 270 154 L 326 154" fill="none" stroke="#16a34a" stroke-width="2" marker-start="url(#arrow-green)" marker-end="url(#arrow-green)"/>
+  <path d="M 222 195 L 270 195 L 270 168 L 326 168" fill="none" stroke="#16a34a" stroke-width="2" marker-start="url(#arrow-green)" marker-end="url(#arrow-green)"/>
+  <path d="M 222 303 L 286 303 L 286 190 L 326 190" fill="none" stroke="#d97706" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#arrow)"/>
+
+  <rect x="228" y="114" width="94" height="36" rx="5" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="275" y="129" text-anchor="middle" font-size="10.5" font-weight="700" fill="#166534">TCP 10050 / 10051</text>
+  <text x="275" y="143" text-anchor="middle" font-size="10" fill="#475569">метрики й опитування</text>
+
+  <!-- Zabbix Server -->
+  <rect x="332" y="110" width="194" height="114" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="429" y="138" text-anchor="middle" font-size="15" font-weight="700" fill="#166534">Zabbix Server</text>
+  <text x="429" y="160" text-anchor="middle" font-size="12" fill="#052e16">Центральне ядро:</text>
+  <text x="429" y="178" text-anchor="middle" font-size="11.5" fill="#052e16">• збір і обробка метрик</text>
+  <text x="429" y="195" text-anchor="middle" font-size="11.5" fill="#052e16">• тригери та сповіщення</text>
+  <text x="429" y="212" text-anchor="middle" font-size="11.5" fill="#052e16">• планування дій (Actions)</text>
+
+  <!-- Connector Server <-> Database -->
+  <line x1="526" y1="154" x2="594" y2="122" stroke="#475569" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="562" y="124" text-anchor="middle" font-size="10.5" font-weight="600" fill="#475569">SQL</text>
+
+  <!-- Zabbix Database -->
+  <rect x="600" y="64" width="194" height="96" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="697" y="90" text-anchor="middle" font-size="14" font-weight="700" fill="#92400e">База даних Zabbix</text>
+  <text x="697" y="110" text-anchor="middle" font-size="12" font-weight="600" fill="#451a03">PostgreSQL / MySQL</text>
+  <text x="697" y="130" text-anchor="middle" font-size="11.5" fill="#451a03">Конфігурація, History,</text>
+  <text x="697" y="146" text-anchor="middle" font-size="11.5" fill="#451a03">добові тренди (Trends)</text>
+
+  <!-- Zabbix Web UI -->
+  <rect x="332" y="264" width="194" height="78" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.8"/>
+  <text x="429" y="290" text-anchor="middle" font-size="14" font-weight="700" fill="#1e3a8a">Zabbix Web UI</text>
+  <text x="429" y="310" text-anchor="middle" font-size="11.5" fill="#172554">Вебінтерфейс (PHP)</text>
+  <text x="429" y="327" text-anchor="middle" font-size="11.5" fill="#172554">Дашборди, графіки, карти</text>
+
+  <!-- Connectors Web UI <-> Server & DB -->
+  <line x1="429" y1="224" x2="429" y2="258" stroke="#475569" stroke-width="1.8" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <path d="M 526 286 L 566 286 L 566 144 L 594 144" fill="none" stroke="#475569" stroke-width="1.8" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+
+  <!-- Operator Browser -->
+  <rect x="600" y="264" width="194" height="78" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="697" y="290" text-anchor="middle" font-size="14" font-weight="700" fill="#991b1b">Браузер оператора</text>
+  <text x="697" y="310" text-anchor="middle" font-size="11.5" fill="#450a0a">Моніторинг інцидентів</text>
+  <text x="697" y="327" text-anchor="middle" font-size="11.5" fill="#450a0a">та адміністрування</text>
+
+  <!-- Browser -> Web UI -->
+  <line x1="600" y1="303" x2="532" y2="303" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="566" y="295" text-anchor="middle" font-size="10.5" font-weight="600" fill="#475569">HTTPS</text>
+</svg>

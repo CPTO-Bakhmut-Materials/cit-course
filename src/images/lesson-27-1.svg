@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 380" width="100%" height="auto" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#475569"/>
+    </marker>
+    <marker id="arrow-rev" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto">
+      <path d="M 10 1 L 0 5 L 10 9 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <rect width="820" height="380" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="410" y="32" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Архітектура мережевої взаємодії (P2P проти Клієнт-Сервер)</text>
+
+  <!-- Left Card: P2P -->
+  <rect x="24" y="50" width="374" height="308" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="1.8"/>
+  <rect x="24" y="50" width="374" height="42" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <rect x="24" y="78" width="374" height="14" fill="#fef3c7"/>
+  <line x1="24" y1="92" x2="398" y2="92" stroke="#d97706" stroke-width="1.5"/>
+  <text x="211" y="76" text-anchor="middle" font-size="14" font-weight="700" fill="#78350f">ОДНОРАНГОВА (PEER-TO-PEER)</text>
+
+  <!-- P2P nodes -->
+  <rect x="66" y="114" width="90" height="38" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="111" y="138" text-anchor="middle" font-size="13" font-weight="700" fill="#78350f">ПК А</text>
+
+  <rect x="266" y="114" width="90" height="38" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="311" y="138" text-anchor="middle" font-size="13" font-weight="700" fill="#78350f">ПК B</text>
+
+  <rect x="166" y="202" width="90" height="38" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="211" y="226" text-anchor="middle" font-size="13" font-weight="700" fill="#78350f">ПК C</text>
+
+  <!-- P2P arrows -->
+  <line x1="162" y1="133" x2="260" y2="133" stroke="#475569" stroke-width="1.8" marker-start="url(#arrow-rev)" marker-end="url(#arrow)"/>
+  <line x1="126" y1="156" x2="180" y2="198" stroke="#475569" stroke-width="1.8" marker-start="url(#arrow-rev)" marker-end="url(#arrow)"/>
+  <line x1="296" y1="156" x2="242" y2="198" stroke="#475569" stroke-width="1.8" marker-start="url(#arrow-rev)" marker-end="url(#arrow)"/>
+
+  <!-- P2P summary box -->
+  <rect x="42" y="256" width="338" height="86" rx="8" fill="#fffbeb" stroke="#fde68a" stroke-width="1.2"/>
+  <circle cx="58" cy="276" r="3" fill="#d97706"/>
+  <text x="68" y="280" font-size="12" fill="#1e293b">Кожен ПК — одночасно клієнт і сервер</text>
+  <circle cx="58" cy="298" r="3" fill="#d97706"/>
+  <text x="68" y="302" font-size="12" fill="#1e293b">Просте налаштування, децентралізований захист</text>
+  <circle cx="58" cy="320" r="3" fill="#d97706"/>
+  <text x="68" y="324" font-size="12" fill="#1e293b">Ефективно лише до 10–15 комп'ютерів</text>
+
+  <!-- Right Card: Client-Server -->
+  <rect x="422" y="50" width="374" height="308" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="1.8"/>
+  <rect x="422" y="50" width="374" height="42" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="1.8"/>
+  <rect x="422" y="78" width="374" height="14" fill="#dbeafe"/>
+  <line x1="422" y1="92" x2="796" y2="92" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="609" y="76" text-anchor="middle" font-size="14" font-weight="700" fill="#1e3a8a">КЛІЄНТ-СЕРВЕР (CLIENT-SERVER)</text>
+
+  <!-- Client nodes -->
+  <rect x="462" y="114" width="110" height="36" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.6"/>
+  <text x="517" y="137" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1e3a8a">Клієнт 1</text>
+
+  <rect x="646" y="114" width="110" height="36" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.6"/>
+  <text x="701" y="137" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1e3a8a">Клієнт 2</text>
+
+  <!-- Server node -->
+  <rect x="494" y="190" width="230" height="50" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
+  <text x="609" y="212" text-anchor="middle" font-size="13" font-weight="700" fill="#14532d">СЕРВЕР (NOS)</text>
+  <text x="609" y="230" text-anchor="middle" font-size="11.5" fill="#166534">Служби, файли, аутентифікація</text>
+
+  <!-- Client-Server arrows -->
+  <line x1="528" y1="154" x2="572" y2="186" stroke="#475569" stroke-width="1.8" marker-start="url(#arrow-rev)" marker-end="url(#arrow)"/>
+  <line x1="690" y1="154" x2="646" y2="186" stroke="#475569" stroke-width="1.8" marker-start="url(#arrow-rev)" marker-end="url(#arrow)"/>
+
+  <!-- Client-Server summary box -->
+  <rect x="440" y="256" width="338" height="86" rx="8" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.2"/>
+  <circle cx="456" cy="276" r="3" fill="#16a34a"/>
+  <text x="466" y="280" font-size="12" fill="#1e293b">Централізований контроль і база користувачів</text>
+  <circle cx="456" cy="298" r="3" fill="#16a34a"/>
+  <text x="466" y="302" font-size="12" fill="#1e293b">Гарантоване резервне копіювання й аудит</text>
+  <circle cx="456" cy="320" r="3" fill="#16a34a"/>
+  <text x="466" y="324" font-size="12" fill="#1e293b">Висока масштабованість (сотні й тисячі ПК)</text>
+</svg>

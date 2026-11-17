@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 450" width="100%" height="auto" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="820" height="450" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="410" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Комплексна модель захисту ІТ-проєкту та регламент виступу</text>
+
+  <!-- Top Row: 4 Pillars of Project Defense -->
+  <!-- Stage 1 -->
+  <rect x="24" y="56" width="176" height="174" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.8"/>
+  <text x="112" y="79" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1e3a8a">1. Технічний звіт</text>
+  <rect x="64" y="88" width="96" height="22" rx="11" fill="#2563eb"/>
+  <text x="112" y="103" text-anchor="middle" font-size="11.5" font-weight="700" fill="#ffffff">Вага оцінки: 20%</text>
+  <text x="36" y="130" font-size="11.5" fill="#172554">• Титул та характеристика</text>
+  <text x="36" y="148" font-size="11.5" fill="#172554">• Топологія мережі й IP</text>
+  <text x="36" y="166" font-size="11.5" fill="#172554">• Конфіги Compose, .env</text>
+  <text x="36" y="184" font-size="11.5" fill="#172554">• Карта РТО та бекап 3-2-1</text>
+  <text x="36" y="202" font-size="11.5" fill="#172554">• Оцінка переваг FOSS</text>
+
+  <!-- Arrow 1 -> 2 -->
+  <line x1="202" y1="143" x2="220" y2="143" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Stage 2 -->
+  <rect x="224" y="56" width="176" height="174" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
+  <text x="312" y="79" text-anchor="middle" font-size="13.5" font-weight="700" fill="#166534">2. Презентація</text>
+  <rect x="258" y="88" width="108" height="22" rx="11" fill="#16a34a"/>
+  <text x="312" y="103" text-anchor="middle" font-size="11.5" font-weight="700" fill="#ffffff">7–8 слайдів</text>
+  <text x="236" y="130" font-size="11.5" fill="#052e16">• Мінімум тексту, більше</text>
+  <text x="244" y="145" font-size="11.5" fill="#052e16">схем та візуалізації</text>
+  <text x="236" y="166" font-size="11.5" fill="#052e16">• Стек: Nginx, MariaDB,</text>
+  <text x="244" y="181" font-size="11.5" fill="#052e16">Adminer у Docker</text>
+  <text x="236" y="202" font-size="11.5" fill="#052e16">• Економічний ефект СПО</text>
+
+  <!-- Arrow 2 -> 3 -->
+  <line x1="402" y1="143" x2="420" y2="143" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Stage 3 -->
+  <rect x="424" y="56" width="176" height="174" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="512" y="79" text-anchor="middle" font-size="13.5" font-weight="700" fill="#92400e">3. Жива демонстрація</text>
+  <rect x="460" y="88" width="104" height="22" rx="11" fill="#d97706"/>
+  <text x="512" y="103" text-anchor="middle" font-size="11.5" font-weight="700" fill="#ffffff">Live Demo: 40%</text>
+  <text x="436" y="130" font-size="11.5" fill="#451a03">• docker compose ps (Up)</text>
+  <text x="436" y="148" font-size="11.5" fill="#451a03">• Порти 80 / 8080 у ss</text>
+  <text x="436" y="166" font-size="11.5" fill="#451a03">• Сайт і таблиці в Adminer</text>
+  <text x="436" y="184" font-size="11.5" fill="#451a03">• Запуск backup_system.sh</text>
+  <text x="436" y="202" font-size="11.5" fill="#451a03">• Перевірка журналу логів</text>
+
+  <!-- Arrow 3 -> 4 -->
+  <line x1="602" y1="143" x2="620" y2="143" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Stage 4 -->
+  <rect x="624" y="56" width="172" height="174" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="710" y="79" text-anchor="middle" font-size="13.5" font-weight="700" fill="#991b1b">4. Захист і Q&amp;A</text>
+  <rect x="633" y="88" width="154" height="22" rx="11" fill="#dc2626"/>
+  <text x="710" y="103" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ffffff">Захист 20% + Безпека 20%</text>
+  <text x="636" y="130" font-size="11.5" fill="#7f1d1d">• Запитання комісії</text>
+  <text x="636" y="148" font-size="11.5" fill="#7f1d1d">• Аргументація тома даних</text>
+  <text x="636" y="166" font-size="11.5" fill="#7f1d1d">• Моніторинг диска (85%)</text>
+  <text x="636" y="184" font-size="11.5" fill="#7f1d1d">• Без відкритих паролів</text>
+  <text x="636" y="202" font-size="11.5" fill="#7f1d1d">• Профіль GitHub + README</text>
+
+  <!-- Middle Section: 5-Minute Speech Timeline -->
+  <text x="410" y="258" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">Тайм-план доповіді за секундоміром (регламент: 5–7 хвилин)</text>
+
+  <rect x="24" y="272" width="120" height="62" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="84" y="294" text-anchor="middle" font-size="12" font-weight="700" fill="#1e3a8a">0:00 – 0:45</text>
+  <text x="84" y="312" text-anchor="middle" font-size="11.5" fill="#172554">Вступ та мета</text>
+  <text x="84" y="326" text-anchor="middle" font-size="10.5" fill="#475569">ТОВ «ТехноСервіс»</text>
+
+  <line x1="146" y1="303" x2="158" y2="303" stroke="#475569" stroke-width="1.8" marker-end="url(#arrow)"/>
+
+  <rect x="162" y="272" width="144" height="62" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="234" y="294" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">0:45 – 1:45</text>
+  <text x="234" y="312" text-anchor="middle" font-size="11.5" fill="#052e16">Архітектура й FOSS</text>
+  <text x="234" y="326" text-anchor="middle" font-size="10.5" fill="#475569">Docker + ізоляція</text>
+
+  <line x1="308" y1="303" x2="320" y2="303" stroke="#475569" stroke-width="1.8" marker-end="url(#arrow)"/>
+
+  <rect x="324" y="272" width="180" height="62" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="414" y="294" text-anchor="middle" font-size="12" font-weight="700" fill="#92400e">1:45 – 3:15</text>
+  <text x="414" y="312" text-anchor="middle" font-size="11.5" font-weight="700" fill="#451a03">Жива демонстрація</text>
+  <text x="414" y="326" text-anchor="middle" font-size="10.5" fill="#78350f">Термінал + Веб-браузер</text>
+
+  <line x1="506" y1="303" x2="518" y2="303" stroke="#475569" stroke-width="1.8" marker-end="url(#arrow)"/>
+
+  <rect x="522" y="272" width="144" height="62" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="594" y="294" text-anchor="middle" font-size="12" font-weight="700" fill="#1e3a8a">3:15 – 4:15</text>
+  <text x="594" y="312" text-anchor="middle" font-size="11.5" fill="#172554">Регламент РТО</text>
+  <text x="594" y="326" text-anchor="middle" font-size="10.5" fill="#475569">Правило 3-2-1 і cron</text>
+
+  <line x1="668" y1="303" x2="680" y2="303" stroke="#475569" stroke-width="1.8" marker-end="url(#arrow)"/>
+
+  <rect x="684" y="272" width="112" height="62" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="740" y="294" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">4:15 – 5:00</text>
+  <text x="740" y="312" text-anchor="middle" font-size="11.5" fill="#052e16">Висновки</text>
+  <text x="740" y="326" text-anchor="middle" font-size="10.5" fill="#475569">Перехід до Q&amp;A</text>
+
+  <!-- Bottom Box: Murphy's Law & Plan B -->
+  <rect x="24" y="354" width="772" height="76" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="410" y="377" text-anchor="middle" font-size="13.5" font-weight="700" fill="#991b1b">Захист від «Закону Мерфі» — обов'язковий План «Б» перед виступом</text>
+  <text x="410" y="398" text-anchor="middle" font-size="12" fill="#7f1d1d">1. Перевірте стенд за 15 хв (docker compose ps)  •  2. Очистіть термінал (clear) і збільште шрифт до 16–18 pt</text>
+  <text x="410" y="416" text-anchor="middle" font-size="12" fill="#7f1d1d">3. Підготуйте шпаргалку команд / аліаси  •  4. Майте на флешці резервні скріншоти та відео роботи системи</text>
+</svg>

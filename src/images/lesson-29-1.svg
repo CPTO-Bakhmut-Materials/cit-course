@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 380" width="100%" height="auto" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <rect width="820" height="380" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="410" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Етапи встановлення серверної ОС Linux (Subiquity / TUI)</text>
+
+  <!-- Row 1: Step 1 -> Step 2 -->
+  <rect x="50" y="58" width="320" height="72" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="210" y="88" text-anchor="middle" font-size="14" font-weight="700" fill="#1e3a8a">1. Перевірка образу ISO</text>
+  <text x="210" y="110" text-anchor="middle" font-size="12.5" fill="#1e40af">Верифікація хеш-суми SHA-256</text>
+
+  <line x1="370" y1="94" x2="442" y2="94" stroke="#475569" stroke-width="2.2" marker-end="url(#arrow)"/>
+
+  <rect x="450" y="58" width="320" height="72" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="610" y="88" text-anchor="middle" font-size="14" font-weight="700" fill="#1e3a8a">2. Вибір мови та клавіатури</text>
+  <text x="610" y="110" text-anchor="middle" font-size="12.5" fill="#1e40af">Системна мова English, розкладка US</text>
+
+  <!-- Arrow down from Step 2 to Step 3 -->
+  <line x1="610" y1="130" x2="610" y2="160" stroke="#475569" stroke-width="2.2" marker-end="url(#arrow)"/>
+
+  <!-- Row 2: Step 4 <- Step 3 -->
+  <rect x="50" y="168" width="320" height="72" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="210" y="198" text-anchor="middle" font-size="14" font-weight="700" fill="#78350f">4. Дискова розмітка LVM</text>
+  <text x="210" y="220" text-anchor="middle" font-size="12.5" fill="#b45309">Таблиця GPT, група томів (VG) та LV</text>
+
+  <line x1="450" y1="204" x2="378" y2="204" stroke="#475569" stroke-width="2.2" marker-end="url(#arrow)"/>
+
+  <rect x="450" y="168" width="320" height="72" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="610" y="198" text-anchor="middle" font-size="14" font-weight="700" fill="#14532d">3. Мережа (Static IP / DHCP)</text>
+  <text x="610" y="220" text-anchor="middle" font-size="12.5" fill="#15803d">Підмережа, IPv4-адреса, шлюз і DNS</text>
+
+  <!-- Arrow down from Step 4 to Step 5 -->
+  <line x1="210" y1="240" x2="210" y2="270" stroke="#475569" stroke-width="2.2" marker-end="url(#arrow)"/>
+
+  <!-- Row 3: Step 5 -> Step 6 -> Step 7 -->
+  <rect x="50" y="278" width="220" height="76" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="160" y="309" text-anchor="middle" font-size="14" font-weight="700" fill="#14532d">5. Обліковий запис</text>
+  <text x="160" y="331" text-anchor="middle" font-size="12" fill="#15803d">Hostname, логін sudo, пароль</text>
+
+  <line x1="270" y1="316" x2="292" y2="316" stroke="#475569" stroke-width="2.2" marker-end="url(#arrow)"/>
+
+  <rect x="300" y="278" width="220" height="76" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="410" y="309" text-anchor="middle" font-size="14" font-weight="700" fill="#7f1d1d">6. OpenSSH Server</text>
+  <text x="410" y="331" text-anchor="middle" font-size="12" fill="#b91c1c">[X] Install OpenSSH (порт 22)</text>
+
+  <line x1="520" y1="316" x2="542" y2="316" stroke="#475569" stroke-width="2.2" marker-end="url(#arrow)"/>
+
+  <rect x="550" y="278" width="220" height="76" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="660" y="309" text-anchor="middle" font-size="14" font-weight="700" fill="#1e3a8a">7. Перший запуск CLI</text>
+  <text x="660" y="331" text-anchor="middle" font-size="12" fill="#1e40af">Reboot Now і вхід у консоль</text>
+</svg>

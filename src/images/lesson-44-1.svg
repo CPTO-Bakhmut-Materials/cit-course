@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="100%" height="auto" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="360" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="400" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Життєвий цикл журналів подій у Linux: збір, аналіз та ротація</text>
+
+  <!-- Stage 1: Sources & Storage -->
+  <rect x="24" y="60" width="224" height="86" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.8"/>
+  <text x="136" y="84" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1e3a8a">1. Джерела подій ОС</text>
+  <text x="136" y="106" text-anchor="middle" font-size="12" fill="#172554">Ядро Linux, systemd, SSH,</text>
+  <text x="136" y="124" text-anchor="middle" font-size="12" fill="#172554">Nginx, Apache, sudo, cron</text>
+
+  <line x1="136" y1="146" x2="136" y2="168" stroke="#475569" stroke-width="1.8" marker-end="url(#arrow)"/>
+
+  <rect x="24" y="174" width="224" height="92" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
+  <text x="136" y="198" text-anchor="middle" font-size="13.5" font-weight="700" fill="#166534">2. Підсистеми запису</text>
+  <text x="36" y="220" font-size="11.5" fill="#052e16">• systemd-journald (бінарний)</text>
+  <text x="36" y="238" font-size="11.5" fill="#052e16">• /var/log/syslog, auth.log</text>
+  <text x="36" y="254" font-size="11.5" fill="#052e16">• /var/log/nginx/access.log</text>
+
+  <!-- Arrow to Stage 2 -->
+  <line x1="248" y1="220" x2="282" y2="220" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Stage 2: Analysis -->
+  <rect x="288" y="60" width="224" height="206" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="400" y="88" text-anchor="middle" font-size="14" font-weight="700" fill="#92400e">3. Аналіз та розслідування</text>
+  <text x="302" y="116" font-size="12" font-weight="600" fill="#451a03">Бінарний журнал:</text>
+  <text x="302" y="135" font-size="11.5" fill="#451a03">• journalctl -p err..emerg</text>
+  <text x="302" y="153" font-size="11.5" fill="#451a03">• journalctl -u ssh -f</text>
+  <text x="302" y="182" font-size="12" font-weight="600" fill="#451a03">Конвеєр текстових логів:</text>
+  <text x="302" y="201" font-size="11.5" fill="#451a03">• grep (фільтр кодів 404 / 500)</text>
+  <text x="302" y="219" font-size="11.5" fill="#451a03">• awk (витяг IP або URL)</text>
+  <text x="302" y="237" font-size="11.5" fill="#451a03">• sort | uniq -c | sort -nr</text>
+
+  <!-- Arrow to Stage 3 -->
+  <line x1="512" y1="220" x2="546" y2="220" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Stage 3: Rotation -->
+  <rect x="552" y="60" width="224" height="206" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="664" y="88" text-anchor="middle" font-size="14" font-weight="700" fill="#991b1b">4. Ротація (logrotate)</text>
+  <text x="566" y="116" font-size="12" fill="#450a0a">• Перевірка за розкладом</text>
+  <text x="566" y="135" font-size="11.5" fill="#450a0a">  (daily / weekly)</text>
+  <text x="566" y="162" font-size="12" fill="#450a0a">• Стиснення старих копій</text>
+  <text x="566" y="181" font-size="11.5" fill="#450a0a">  (access.log.1.gz)</text>
+  <text x="566" y="208" font-size="12" fill="#450a0a">• Видалення понад ліміт</text>
+  <text x="566" y="227" font-size="11.5" fill="#450a0a">  (rotate 7 / rotate 14)</text>
+  <text x="566" y="252" font-size="11.5" font-weight="600" fill="#991b1b">Захист диска від переповнення</text>
+
+  <!-- Bottom RFC 5424 bar -->
+  <rect x="24" y="286" width="752" height="54" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="400" y="307" text-anchor="middle" font-size="12.5" font-weight="700" fill="#334155">Шкала рівнів важливості подій (RFC 5424 / Syslog): від найкритичніших до налагоджувальних</text>
+  <text x="400" y="328" text-anchor="middle" font-size="11.5" font-weight="600" fill="#475569">0 Emergency  →  1 Alert  →  2 Critical  →  3 Error  →  4 Warning  →  5 Notice  →  6 Info  →  7 Debug</text>
+</svg>

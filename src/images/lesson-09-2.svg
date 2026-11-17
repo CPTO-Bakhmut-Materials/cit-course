@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 355" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <marker id="open-arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M 2 2 L 10 6 L 2 10" fill="none" stroke="#334155" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect width="760" height="355" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="380" y="32" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a">Типи зв'язків між класами в UML</text>
+
+  <!-- Row 1: Association -->
+  <rect x="24" y="56" width="250" height="56" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="38" y="80" font-size="14" font-weight="700" fill="#1e3a8a">1. Асоціація</text>
+  <text x="38" y="100" font-size="12.5" fill="#1e40af">простий логічний зв'язок</text>
+
+  <rect x="304" y="63" width="112" height="42" rx="6" fill="#ffffff" stroke="#3b82f6" stroke-width="1.8"/>
+  <text x="360" y="89" text-anchor="middle" font-size="14" font-weight="600" fill="#0f172a">Клас А</text>
+  <line x1="416" y1="84" x2="606" y2="84" stroke="#334155" stroke-width="2" marker-end="url(#open-arrow)"/>
+  <text x="512" y="75" text-anchor="middle" font-size="12" fill="#475569" font-family="ui-monospace, monospace">--&gt;</text>
+  <rect x="610" y="63" width="122" height="42" rx="6" fill="#ffffff" stroke="#3b82f6" stroke-width="1.8"/>
+  <text x="671" y="89" text-anchor="middle" font-size="14" font-weight="600" fill="#0f172a">Клас Б</text>
+
+  <!-- Row 2: Aggregation -->
+  <rect x="24" y="128" width="250" height="56" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="38" y="152" font-size="14" font-weight="700" fill="#14532d">2. Агрегація</text>
+  <text x="38" y="172" font-size="12.5" fill="#166534">слабке «частина-ціле»</text>
+
+  <rect x="304" y="135" width="112" height="42" rx="6" fill="#ffffff" stroke="#16a34a" stroke-width="1.8"/>
+  <text x="360" y="161" text-anchor="middle" font-size="14" font-weight="600" fill="#0f172a">Ціле</text>
+  <line x1="436" y1="156" x2="610" y2="156" stroke="#334155" stroke-width="2"/>
+  <polygon points="416,156 426,149 436,156 426,163" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
+  <text x="522" y="147" text-anchor="middle" font-size="12" fill="#475569">порожній ромб (o--)</text>
+  <rect x="610" y="135" width="122" height="42" rx="6" fill="#ffffff" stroke="#16a34a" stroke-width="1.8"/>
+  <text x="671" y="161" text-anchor="middle" font-size="14" font-weight="600" fill="#0f172a">Частина</text>
+
+  <!-- Row 3: Composition -->
+  <rect x="24" y="200" width="250" height="56" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="38" y="224" font-size="14" font-weight="700" fill="#78350f">3. Композиція</text>
+  <text x="38" y="244" font-size="12.5" fill="#92400e">нерозривне «частина-ціле»</text>
+
+  <rect x="304" y="207" width="112" height="42" rx="6" fill="#ffffff" stroke="#d97706" stroke-width="1.8"/>
+  <text x="360" y="233" text-anchor="middle" font-size="14" font-weight="600" fill="#0f172a">Ціле</text>
+  <line x1="436" y1="228" x2="610" y2="228" stroke="#334155" stroke-width="2"/>
+  <polygon points="416,228 426,221 436,228 426,235" fill="#1e293b" stroke="#1e293b" stroke-width="2"/>
+  <text x="522" y="219" text-anchor="middle" font-size="12" fill="#475569">зафарбований ромб (*--)</text>
+  <rect x="610" y="207" width="122" height="42" rx="6" fill="#ffffff" stroke="#d97706" stroke-width="1.8"/>
+  <text x="671" y="233" text-anchor="middle" font-size="14" font-weight="600" fill="#0f172a">Частина</text>
+
+  <!-- Row 4: Inheritance / Generalization -->
+  <rect x="24" y="272" width="250" height="58" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="38" y="296" font-size="14" font-weight="700" fill="#7f1d1d">4. Успадкування</text>
+  <text x="38" y="316" font-size="12.5" fill="#991b1b">генералізація (є різновидом)</text>
+
+  <rect x="304" y="280" width="112" height="42" rx="6" fill="#ffffff" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="360" y="306" text-anchor="middle" font-size="14" font-weight="600" fill="#0f172a">Батько</text>
+  <line x1="431" y1="301" x2="610" y2="301" stroke="#334155" stroke-width="2"/>
+  <polygon points="416,301 431,293 431,309" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
+  <text x="522" y="291" text-anchor="middle" font-size="12" fill="#475569">порожній трикутник (--|&gt;)</text>
+  <rect x="610" y="280" width="122" height="42" rx="6" fill="#ffffff" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="671" y="306" text-anchor="middle" font-size="14" font-weight="600" fill="#0f172a">Нащадок</text>
+</svg>

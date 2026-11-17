@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 370" width="100%" height="auto" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#475569"/>
+    </marker>
+    <marker id="arrow-up" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#2563eb"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="780" height="370" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="390" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Піраміда DIKW: від сирих даних до знань</text>
+
+  <!-- Upward Context Arrow -->
+  <line x1="48" y1="322" x2="48" y2="76" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrow-up)"/>
+  <text x="30" y="200" text-anchor="middle" font-size="12" font-weight="600" fill="#1e40af" transform="rotate(-90 30 200)">Зростання контексту та цінності</text>
+
+  <!-- Pyramid Tiers -->
+  <!-- Top: Knowledge -->
+  <polygon points="210,66 155,148 265,148" fill="#fef3c7" stroke="#d97706" stroke-width="2" stroke-linejoin="round"/>
+  <text x="210" y="130" text-anchor="middle" font-size="13" font-weight="700" fill="#92400e">ЗНАННЯ</text>
+
+  <!-- Middle: Information -->
+  <polygon points="150,156 270,156 318,238 102,238" fill="#dcfce7" stroke="#16a34a" stroke-width="2" stroke-linejoin="round"/>
+  <text x="210" y="203" text-anchor="middle" font-size="14" font-weight="700" fill="#166534">ІНФОРМАЦІЯ</text>
+
+  <!-- Bottom: Data -->
+  <polygon points="97,246 323,246 370,330 50,330" fill="#dbeafe" stroke="#2563eb" stroke-width="2" stroke-linejoin="round"/>
+  <text x="210" y="294" text-anchor="middle" font-size="15" font-weight="700" fill="#1e40af">ДАНІ</text>
+
+  <!-- Connectors -->
+  <line x1="255" y1="108" x2="408" y2="108" stroke="#475569" stroke-width="1.8" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+  <line x1="296" y1="197" x2="408" y2="197" stroke="#475569" stroke-width="1.8" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+  <line x1="348" y1="288" x2="408" y2="288" stroke="#475569" stroke-width="1.8" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+
+  <!-- Explanation Cards -->
+  <!-- Knowledge Card -->
+  <rect x="416" y="72" width="334" height="72" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="432" y="96" font-size="14" font-weight="700" fill="#92400e">Знання (Knowledge)</text>
+  <text x="432" y="116" font-size="12.5" fill="#451a03">Правила, алгоритми та інструкції,</text>
+  <text x="432" y="133" font-size="12.5" fill="#451a03">що дозволяють ухвалювати рішення</text>
+
+  <!-- Information Card -->
+  <rect x="416" y="161" width="334" height="72" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
+  <text x="432" y="185" font-size="14" font-weight="700" fill="#166534">Інформація (Information)</text>
+  <text x="432" y="205" font-size="12.5" fill="#052e16">Структуровані дані в певному контексті,</text>
+  <text x="432" y="222" font-size="12.5" fill="#052e16">які зменшують невизначеність</text>
+
+  <!-- Data Card -->
+  <rect x="416" y="252" width="334" height="72" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.8"/>
+  <text x="432" y="276" font-size="14" font-weight="700" fill="#1e3a8a">Дані (Data)</text>
+  <text x="432" y="296" font-size="12.5" fill="#172554">Первинні зафіксовані факти, числа,</text>
+  <text x="432" y="313" font-size="12.5" fill="#172554">сигнали та символи без контексту</text>
+</svg>

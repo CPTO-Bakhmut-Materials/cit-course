@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" width="100%" height="auto" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#334155"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="330" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="400" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Архітектура системи GLPI (ITAM + ITSM)</text>
+
+  <!-- Top Center: GLPI -->
+  <rect x="170" y="54" width="460" height="62" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="1.8"/>
+  <text x="400" y="80" text-anchor="middle" font-size="15" font-weight="700" fill="#1e3a8a">СИСТЕМА GLPI</text>
+  <text x="400" y="101" text-anchor="middle" font-size="12" fill="#1e40af">Вебплатформа з відкритим кодом (PHP + MariaDB / MySQL)</text>
+
+  <!-- Connectors -->
+  <path d="M 300 116 L 300 138 L 205 138 L 205 156" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 500 116 L 500 138 L 595 138 L 595 156" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Left Card: ITAM -->
+  <rect x="35" y="162" width="340" height="142" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
+  <rect x="35" y="162" width="340" height="38" rx="10" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.8"/>
+  <text x="205" y="186" text-anchor="middle" font-size="14" font-weight="700" fill="#14532d">МОДУЛЬ АКТИВІВ (ITAM)</text>
+  <text x="55" y="222" font-size="12.5" fill="#166534">• Комп'ютери, сервери та монітори</text>
+  <text x="55" y="244" font-size="12.5" fill="#166534">• Мережеве обладнання й принтери</text>
+  <text x="55" y="266" font-size="12.5" fill="#166534">• Програмне забезпечення та ліцензії</text>
+  <text x="55" y="288" font-size="12.5" fill="#166534">• Картриджі, комплектуючі та контракти</text>
+
+  <!-- Right Card: Helpdesk -->
+  <rect x="425" y="162" width="340" height="142" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <rect x="425" y="162" width="340" height="38" rx="10" fill="#fde68a" stroke="#d97706" stroke-width="1.8"/>
+  <text x="595" y="186" text-anchor="middle" font-size="14" font-weight="700" fill="#78350f">МОДУЛЬ HELPDESK (ITSM)</text>
+  <text x="445" y="222" font-size="12.5" fill="#92400e">• Реєстрація заявок користувачів (Tickets)</text>
+  <text x="445" y="244" font-size="12.5" fill="#92400e">• Контроль часових нормативів SLA</text>
+  <text x="445" y="266" font-size="12.5" fill="#92400e">• Рівні підтримки (1 / 2 / 3 лінія)</text>
+  <text x="445" y="288" font-size="12.5" fill="#92400e">• База знань і типових рішень</text>
+</svg>

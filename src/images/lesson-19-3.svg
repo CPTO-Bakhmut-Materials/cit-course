@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 280" width="100%" height="auto" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#d97706"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#16a34a"/>
+    </marker>
+  </defs>
+
+  <rect width="820" height="280" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="410" y="34" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Вплив режиму оперативної пам'яті на пропускну здатність та iGPU</text>
+
+  <!-- Left Panel: Single-Channel -->
+  <rect x="26" y="54" width="372" height="202" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="212" y="80" text-anchor="middle" font-size="14" font-weight="700" fill="#991b1b">Варіант А: 1 x 16 ГБ (Single-Channel)</text>
+
+  <rect x="46" y="102" width="110" height="52" rx="6" fill="#ffffff" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="101" y="125" text-anchor="middle" font-size="12" font-weight="700" fill="#0f172a">Контролер CPU</text>
+  <text x="101" y="143" text-anchor="middle" font-size="11" fill="#475569">+ відеоядро UHD</text>
+
+  <line x1="160" y1="128" x2="232" y2="128" stroke="#d97706" stroke-width="3" marker-start="url(#arrow-amber)" marker-end="url(#arrow-amber)"/>
+  <text x="196" y="118" text-anchor="middle" font-size="11" font-weight="700" fill="#92400e">64 біти</text>
+
+  <rect x="236" y="108" width="142" height="40" rx="5" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="307" y="132" text-anchor="middle" font-size="12" font-weight="700" fill="#78350f">1 планка 16 ГБ</text>
+
+  <rect x="46" y="172" width="332" height="68" rx="6" fill="#ffffff" stroke="#fca5a5" stroke-width="1.4"/>
+  <text x="212" y="194" text-anchor="middle" font-size="12.5" font-weight="700" fill="#991b1b">Пропускна здатність: ~25.6 ГБ/с</text>
+  <text x="212" y="214" text-anchor="middle" font-size="11.5" fill="#334155">Обмежений потік даних для вбудованої графіки.</text>
+  <text x="212" y="230" text-anchor="middle" font-size="11.5" fill="#334155">Можливі мікрозависання у 4K-відео та великих таблицях.</text>
+
+  <!-- Right Panel: Dual-Channel -->
+  <rect x="422" y="54" width="372" height="202" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="608" y="80" text-anchor="middle" font-size="14" font-weight="700" fill="#14532d">Варіант Б: 2 x 8 ГБ (Dual-Channel)</text>
+
+  <rect x="442" y="98" width="110" height="60" rx="6" fill="#ffffff" stroke="#16a34a" stroke-width="1.6"/>
+  <text x="497" y="123" text-anchor="middle" font-size="12" font-weight="700" fill="#0f172a">Контролер CPU</text>
+  <text x="497" y="141" text-anchor="middle" font-size="11" fill="#475569">+ відеоядро UHD</text>
+
+  <line x1="556" y1="112" x2="628" y2="112" stroke="#16a34a" stroke-width="2.6" marker-start="url(#arrow-green)" marker-end="url(#arrow-green)"/>
+  <text x="592" y="103" text-anchor="middle" font-size="10.5" font-weight="700" fill="#14532d">64 біти</text>
+  <line x1="556" y1="144" x2="628" y2="144" stroke="#16a34a" stroke-width="2.6" marker-start="url(#arrow-green)" marker-end="url(#arrow-green)"/>
+  <text x="592" y="136" text-anchor="middle" font-size="10.5" font-weight="700" fill="#14532d">64 біти</text>
+
+  <rect x="632" y="96" width="142" height="28" rx="5" fill="#dbeafe" stroke="#2563eb" stroke-width="1.6"/>
+  <text x="703" y="114" text-anchor="middle" font-size="12" font-weight="700" fill="#1e3a8a">Планка 1: 8 ГБ</text>
+  <rect x="632" y="130" width="142" height="28" rx="5" fill="#dbeafe" stroke="#2563eb" stroke-width="1.6"/>
+  <text x="703" y="148" text-anchor="middle" font-size="12" font-weight="700" fill="#1e3a8a">Планка 2: 8 ГБ</text>
+
+  <rect x="442" y="172" width="332" height="68" rx="6" fill="#ffffff" stroke="#86efac" stroke-width="1.4"/>
+  <text x="608" y="194" text-anchor="middle" font-size="12.5" font-weight="700" fill="#14532d">Ширина шини 128 біт → ~51.2 ГБ/с (×2)</text>
+  <text x="608" y="214" text-anchor="middle" font-size="11.5" fill="#334155">Вбудоване відео працює на 40–50% швидше,</text>
+  <text x="608" y="230" text-anchor="middle" font-size="11.5" fill="#334155">швидкість роботи системних кешів подвоюється.</text>
+</svg>

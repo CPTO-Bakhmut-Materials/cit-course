@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 270" width="100%" height="auto" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrow-dark" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#334155"/>
+    </marker>
+  </defs>
+
+  <rect width="840" height="270" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="420" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Параметри експорту в архівний формат PDF/A у LibreOffice Writer</text>
+
+  <!-- Left panel: Export dialog -->
+  <rect x="28" y="54" width="376" height="190" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="1.8"/>
+  <rect x="28" y="54" width="376" height="36" rx="10" fill="#bfdbfe" stroke="#2563eb" stroke-width="1.8"/>
+  <text x="216" y="77" text-anchor="middle" font-size="13" font-weight="700" fill="#1e3a8a">Вікно експорту PDF (вкладка «Загальні»)</text>
+
+  <rect x="48" y="104" width="336" height="36" rx="6" fill="#ffffff" stroke="#60a5fa" stroke-width="1.2"/>
+  <text x="62" y="127" font-size="12" font-weight="700" fill="#1e40af">☑ Архівний PDF/A (ISO 19005) → PDF/A-1b</text>
+
+  <rect x="48" y="148" width="336" height="36" rx="6" fill="#ffffff" stroke="#60a5fa" stroke-width="1.2"/>
+  <text x="62" y="171" font-size="12" font-weight="600" fill="#1e40af">☑ Експортувати закладки (структура розділів)</text>
+
+  <rect x="48" y="192" width="336" height="36" rx="6" fill="#ffffff" stroke="#60a5fa" stroke-width="1.2"/>
+  <text x="62" y="215" font-size="12" font-weight="600" fill="#1e40af">☑ Вбудувати стандартні шрифти повністю</text>
+
+  <!-- Arrow -->
+  <line x1="404" y1="149" x2="452" y2="149" stroke="#334155" stroke-width="2.5" marker-end="url(#arrow-dark)"/>
+  <text x="428" y="138" text-anchor="middle" font-size="11" font-weight="700" fill="#334155">Експорт</text>
+
+  <!-- Right panel: Result PDF/A -->
+  <rect x="458" y="54" width="354" height="190" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
+  <rect x="458" y="54" width="354" height="36" rx="10" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.8"/>
+  <text x="635" y="77" text-anchor="middle" font-size="13" font-weight="700" fill="#14532d">Архівний файл memo_access_12.pdf</text>
+
+  <text x="480" y="118" font-size="12" font-weight="600" fill="#166534">• Усі шрифти повністю вбудовані у файл</text>
+  <text x="480" y="144" font-size="12" font-weight="600" fill="#166534">• Заборонено JavaScript і зовнішні скрипти</text>
+  <text x="480" y="170" font-size="12" font-weight="600" fill="#166534">• Кольорові профілі ICC та метадані XMP</text>
+  <rect x="478" y="190" width="314" height="36" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.2"/>
+  <text x="635" y="213" text-anchor="middle" font-size="11.5" font-weight="700" fill="#78350f">Гарантія читабельності на десятиліття</text>
+</svg>

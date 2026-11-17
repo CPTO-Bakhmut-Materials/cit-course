@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 430" width="100%" height="auto" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <rect width="820" height="430" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="410" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Виправлена збалансована специфікація робочої станції оператора</text>
+
+  <!-- Header -->
+  <rect x="30" y="54" width="220" height="38" rx="6" fill="#1e3a8a"/>
+  <text x="140" y="78" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffffff">Компонент</text>
+  <rect x="258" y="54" width="532" height="38" rx="6" fill="#1e3a8a"/>
+  <text x="524" y="78" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffffff">Оптимальний вибір комплектуючих</text>
+
+  <!-- Row 1: CPU -->
+  <rect x="30" y="100" width="220" height="38" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="44" y="124" font-size="13" font-weight="700" fill="#1e3a8a">Процесор (CPU)</text>
+  <rect x="258" y="100" width="532" height="38" rx="6" fill="#ffffff" stroke="#93c5fd" stroke-width="1.5"/>
+  <text x="274" y="124" font-size="13" fill="#0f172a">Intel Core i5-12400 (6 ядер / 12 потоків, TDP 65–117 Вт)</text>
+
+  <!-- Row 2: Cooling -->
+  <rect x="30" y="144" width="220" height="38" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="44" y="168" font-size="13" font-weight="700" fill="#14532d">Охолодження</text>
+  <rect x="258" y="144" width="532" height="38" rx="6" fill="#ffffff" stroke="#86efac" stroke-width="1.5"/>
+  <text x="274" y="168" font-size="13" fill="#0f172a">Баштовий кулер (4 теплові трубки, розсіювання 150 Вт)</text>
+
+  <!-- Row 3: Motherboard -->
+  <rect x="30" y="188" width="220" height="38" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="44" y="212" font-size="13" font-weight="700" fill="#1e3a8a">Материнська плата</text>
+  <rect x="258" y="188" width="532" height="38" rx="6" fill="#ffffff" stroke="#93c5fd" stroke-width="1.5"/>
+  <text x="274" y="212" font-size="13" fill="#0f172a">B760M з радіатором на VRM (4 слоти під RAM)</text>
+
+  <!-- Row 4: RAM -->
+  <rect x="30" y="232" width="220" height="38" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="44" y="256" font-size="13" font-weight="700" fill="#78350f">Оперативна пам'ять</text>
+  <rect x="258" y="232" width="532" height="38" rx="6" fill="#ffffff" stroke="#fcd34d" stroke-width="1.5"/>
+  <text x="274" y="256" font-size="13" fill="#0f172a">16 GB (2 x 8 GB) DDR4-3200 у двоканальному режимі (Dual-Channel)</text>
+
+  <!-- Row 5: SSD -->
+  <rect x="30" y="276" width="220" height="38" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="44" y="300" font-size="13" font-weight="700" fill="#14532d">Накопичувач</text>
+  <rect x="258" y="276" width="532" height="38" rx="6" fill="#ffffff" stroke="#86efac" stroke-width="1.5"/>
+  <text x="274" y="300" font-size="13" fill="#0f172a">500 GB M.2 NVMe PCIe 4.0 (швидкість &gt; 3000 МБ/с)</text>
+
+  <!-- Row 6: PSU -->
+  <rect x="30" y="320" width="220" height="38" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="44" y="344" font-size="13" font-weight="700" fill="#991b1b">Блок живлення</text>
+  <rect x="258" y="320" width="532" height="38" rx="6" fill="#ffffff" stroke="#fca5a5" stroke-width="1.5"/>
+  <text x="274" y="344" font-size="13" fill="#0f172a">450W / 500W із сертифікатом 80 PLUS Bronze (запас потужності &gt; 30%)</text>
+
+  <!-- Row 7: Case -->
+  <rect x="30" y="364" width="220" height="48" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="44" y="393" font-size="13" font-weight="700" fill="#1e3a8a">Корпус</text>
+  <rect x="258" y="364" width="532" height="48" rx="6" fill="#ffffff" stroke="#93c5fd" stroke-width="1.5"/>
+  <text x="274" y="384" font-size="12.5" fill="#0f172a">Форм-фактор Micro-ATX із сітчастою передньою панеллю (Mesh)</text>
+  <text x="274" y="402" font-size="12.5" fill="#0f172a">та 2 вентиляторами 120 мм на вдув і видув</text>
+</svg>

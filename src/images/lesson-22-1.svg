@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 415" width="100%" height="auto" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrow-down" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="415" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="400" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Інженерний комплекс сучасного Центру обробки даних (ЦОД)</text>
+
+  <!-- Top Row: 3 Engineering Pillars -->
+  <!-- Pillar 1: Power -->
+  <rect x="24" y="54" width="236" height="205" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <rect x="24" y="54" width="236" height="38" rx="10" fill="#fde68a" stroke="#d97706" stroke-width="1.8"/>
+  <text x="142" y="78" text-anchor="middle" font-size="14.5" font-weight="700" fill="#78350f">1. Електроживлення</text>
+  <text x="40" y="116" font-size="12.5" fill="#451a03">• 2 незалежні вводи 10/0,4 кВ</text>
+  <text x="40" y="140" font-size="12.5" fill="#451a03">• Промислові масиви ДБЖ (UPS)</text>
+  <text x="40" y="164" font-size="12.5" fill="#451a03">• Дизель-генератори (ДГУ + АВР)</text>
+  <text x="40" y="188" font-size="12.5" fill="#451a03">• Запас палива на 24–72 год</text>
+  <text x="40" y="212" font-size="12.5" fill="#451a03">• Стійкові розподілювачі PDU</text>
+  <text x="40" y="240" font-size="11.5" font-weight="600" fill="#92400e">Безперебійність без розриву фази</text>
+
+  <!-- Pillar 2: Microclimate -->
+  <rect x="282" y="54" width="236" height="205" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="1.8"/>
+  <rect x="282" y="54" width="236" height="38" rx="10" fill="#bfdbfe" stroke="#2563eb" stroke-width="1.8"/>
+  <text x="400" y="78" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1e3a8a">2. Мікроклімат (ASHRAE)</text>
+  <text x="298" y="116" font-size="12.5" fill="#172554">• Прецизійні кондиціонери CRAC</text>
+  <text x="298" y="140" font-size="12.5" fill="#172554">• Чиллери та фрікулінг</text>
+  <text x="298" y="164" font-size="12.5" fill="#172554">• Холодні та гарячі коридори</text>
+  <text x="298" y="188" font-size="12.5" fill="#172554">• Температура входу: +18…+27 °C</text>
+  <text x="298" y="212" font-size="12.5" fill="#172554">• Відносна вологість: 40–60%</text>
+  <text x="298" y="240" font-size="11.5" font-weight="600" fill="#1d4ed8">Точність ±0,5 °C та захист від ESD</text>
+
+  <!-- Pillar 3: Security -->
+  <rect x="540" y="54" width="236" height="205" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <rect x="540" y="54" width="236" height="38" rx="10" fill="#fecaca" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="658" y="78" text-anchor="middle" font-size="14.5" font-weight="700" fill="#7f1d1d">3. Безпека та захист</text>
+  <text x="556" y="116" font-size="12.5" fill="#450a0a">• Газове гасіння (Novec 1230)</text>
+  <text x="556" y="140" font-size="12.5" fill="#450a0a">• Інертні гази (Inergen)</text>
+  <text x="556" y="164" font-size="12.5" fill="#450a0a">• Аспіраційні датчики VESDA</text>
+  <text x="556" y="188" font-size="12.5" fill="#450a0a">• Біометричний СКУД, шлюзи</text>
+  <text x="556" y="212" font-size="12.5" fill="#450a0a">• Відеоспостереження 24/7</text>
+  <text x="556" y="240" font-size="11.5" font-weight="600" fill="#b91c1c">Жодної води чи піни в машзалі</text>
+
+  <!-- Arrows down to Telecom/Core -->
+  <line x1="142" y1="259" x2="142" y2="292" stroke="#475569" stroke-width="2" marker-end="url(#arrow-down)"/>
+  <line x1="400" y1="259" x2="400" y2="292" stroke="#475569" stroke-width="2" marker-end="url(#arrow-down)"/>
+  <line x1="658" y1="259" x2="658" y2="292" stroke="#475569" stroke-width="2" marker-end="url(#arrow-down)"/>
+
+  <!-- Bottom Foundation: Telecommunications & IT Core -->
+  <rect x="24" y="298" width="752" height="94" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
+  <text x="400" y="324" text-anchor="middle" font-size="15" font-weight="700" fill="#14532d">4. Телекомунікації та обчислювальний парк (IT-навантаження)</text>
+  <text x="400" y="349" text-anchor="middle" font-size="13" fill="#052e16">Волоконно-оптичні магістралі • Крос-кімнати MMR (Meet-Me Room) • Незалежні оператори зв'язку (Tier 1/2)</text>
+  <text x="400" y="372" text-anchor="middle" font-size="12.5" font-weight="600" fill="#166534">Серверні шафи 42U/48U • Сховища даних SAN/NAS • Мережеві комутатори ядра</text>
+</svg>

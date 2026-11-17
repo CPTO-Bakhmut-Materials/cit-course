@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 250" width="100%" height="auto" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <rect width="820" height="250" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="410" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Профіль типових навантажень офісного оператора</text>
+
+  <!-- Card 1: Office Suites -->
+  <rect x="26" y="58" width="242" height="164" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="147" y="86" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1e3a8a">Офісні пакети</text>
+  <line x1="44" y1="98" x2="250" y2="98" stroke="#93c5fd" stroke-width="1.4"/>
+  <text x="44" y="124" font-size="12.5" fill="#1e293b">• LibreOffice Writer / Word</text>
+  <text x="44" y="150" font-size="12.5" fill="#1e293b">• Електронні таблиці</text>
+  <text x="54" y="168" font-size="12" fill="#334155">(Calc / Excel &gt; 50 000 рядків)</text>
+  <text x="44" y="196" font-size="12.5" fill="#1e293b">• Робота з PDF та презентаціями</text>
+
+  <!-- Card 2: Web & CRM -->
+  <rect x="289" y="58" width="242" height="164" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="410" y="86" text-anchor="middle" font-size="14.5" font-weight="700" fill="#14532d">Вебсервіси та CRM</text>
+  <line x1="307" y1="98" x2="513" y2="98" stroke="#86efac" stroke-width="1.4"/>
+  <text x="307" y="124" font-size="12.5" fill="#1e293b">• Системи 1С / BAS, Odoo, SAP</text>
+  <text x="307" y="150" font-size="12.5" fill="#1e293b">• 20–40 активних вкладок</text>
+  <text x="317" y="168" font-size="12" fill="#334155">у веббраузері одночасно</text>
+  <text x="307" y="196" font-size="12.5" fill="#1e293b">• Хмарні сховища (Google Drive)</text>
+
+  <!-- Card 3: Communications -->
+  <rect x="552" y="58" width="242" height="164" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="673" y="86" text-anchor="middle" font-size="14.5" font-weight="700" fill="#78350f">Комунікації та звітність</text>
+  <line x1="570" y1="98" x2="776" y2="98" stroke="#fcd34d" stroke-width="1.4"/>
+  <text x="570" y="124" font-size="12.5" fill="#1e293b">• Zoom, MS Teams, Google Meet</text>
+  <text x="570" y="150" font-size="12.5" fill="#1e293b">• Поштові клієнти й месенджери</text>
+  <text x="570" y="176" font-size="12.5" fill="#1e293b">• Сканування та розпізнавання</text>
+  <text x="580" y="194" font-size="12" fill="#334155">документів (OCR)</text>
+</svg>

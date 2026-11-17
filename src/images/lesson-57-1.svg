@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" width="100%" height="auto" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="350" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="400" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Правило резервного копіювання «3-2-1»</text>
+
+  <!-- Top Rule Box -->
+  <rect x="140" y="52" width="520" height="44" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="400" y="79" text-anchor="middle" font-size="14" font-weight="700" fill="#92400e">3 копії даних  •  2 різні типи носіїв  •  1 копія поза офісом</text>
+
+  <!-- Connector Lines -->
+  <line x1="400" y1="96" x2="400" y2="118" stroke="#475569" stroke-width="2"/>
+  <line x1="144" y1="118" x2="656" y2="118" stroke="#475569" stroke-width="2"/>
+  <line x1="144" y1="118" x2="144" y2="142" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="400" y1="118" x2="400" y2="142" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="656" y1="118" x2="656" y2="142" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Card 1: Original -->
+  <rect x="26" y="148" width="236" height="132" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="144" y="176" text-anchor="middle" font-size="15" font-weight="700" fill="#1e3a8a">1. Оригінал (Робочі дані)</text>
+  <line x1="46" y1="188" x2="242" y2="188" stroke="#93c5fd" stroke-width="1.2"/>
+  <text x="42" y="210" font-size="12.5" fill="#1e293b">• Основна СУБД на сервері</text>
+  <text x="42" y="232" font-size="12.5" fill="#1e293b">• Локальний RAID-масив</text>
+  <text x="42" y="254" font-size="12.5" fill="#1e293b">• Активна щоденна робота ІС</text>
+
+  <!-- Card 2: Local Backup -->
+  <rect x="282" y="148" width="236" height="132" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="400" y="176" text-anchor="middle" font-size="15" font-weight="700" fill="#166534">2. Локальний бекап</text>
+  <line x1="302" y1="188" x2="498" y2="188" stroke="#86efac" stroke-width="1.2"/>
+  <text x="298" y="210" font-size="12.5" fill="#1e293b">• Мережеве сховище NAS / HDD</text>
+  <text x="298" y="232" font-size="12.5" fill="#1e293b">• Другий носій в офісі</text>
+  <text x="298" y="254" font-size="12.5" fill="#1e293b">• Швидке відновлення (RTO)</text>
+
+  <!-- Card 3: Offsite / Cloud Backup -->
+  <rect x="538" y="148" width="236" height="132" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="656" y="176" text-anchor="middle" font-size="15" font-weight="700" fill="#991b1b">3. Віддалена копія</text>
+  <line x1="558" y1="188" x2="754" y2="188" stroke="#fca5a5" stroke-width="1.2"/>
+  <text x="554" y="210" font-size="12.5" fill="#1e293b">• Хмара або інша локація</text>
+  <text x="554" y="232" font-size="12.5" fill="#1e293b">• Розміщення поза офісом</text>
+  <text x="554" y="254" font-size="12.5" fill="#1e293b">• Захист від пожежі й крадіжки</text>
+
+  <!-- Footer Note -->
+  <rect x="26" y="298" width="748" height="34" rx="7" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="400" y="320" text-anchor="middle" font-size="12.5" fill="#334155">
+    <tspan font-weight="700" fill="#0f172a">RPO</tspan> — допустима втрата даних у часі   |   <tspan font-weight="700" fill="#0f172a">RTO</tspan> — граничний час повного відновлення системи
+  </text>
+</svg>

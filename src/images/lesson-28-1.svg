@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 340" width="100%" height="auto" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <rect width="820" height="340" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="410" y="32" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Домінуючі сімейства серверних операційних систем</text>
+
+  <!-- Left Card: Windows Server -->
+  <rect x="26" y="50" width="370" height="268" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="1.8"/>
+  <rect x="26" y="50" width="370" height="46" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="1.8"/>
+  <rect x="26" y="82" width="370" height="14" fill="#dbeafe"/>
+  <line x1="26" y1="96" x2="396" y2="96" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="211" y="78" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1e3a8a">MICROSOFT WINDOWS SERVER</text>
+
+  <circle cx="46" cy="124" r="3.5" fill="#2563eb"/>
+  <text x="58" y="128" font-size="12.5" fill="#1e293b">Версії: Windows Server 2019 / 2022 / 2025</text>
+
+  <circle cx="46" cy="156" r="3.5" fill="#2563eb"/>
+  <text x="58" y="160" font-size="12.5" fill="#1e293b">Служби: Active Directory (AD DS), GPO, IIS</text>
+
+  <circle cx="46" cy="188" r="3.5" fill="#2563eb"/>
+  <text x="58" y="192" font-size="12.5" fill="#1e293b">Редакції: Standard, Datacenter, Essentials</text>
+
+  <circle cx="46" cy="220" r="3.5" fill="#2563eb"/>
+  <text x="58" y="224" font-size="12.5" fill="#1e293b">Варіанти: Desktop Experience, Server Core</text>
+
+  <circle cx="46" cy="252" r="3.5" fill="#2563eb"/>
+  <text x="58" y="256" font-size="12.5" fill="#1e293b">Ліцензування: Процесорні ядра (Cores) + CALs</text>
+
+  <circle cx="46" cy="284" r="3.5" fill="#2563eb"/>
+  <text x="58" y="288" font-size="12.5" font-weight="600" fill="#1e3a8a">Ніша: корпоративна інфраструктура офісів</text>
+
+  <!-- Right Card: Linux Server -->
+  <rect x="424" y="50" width="370" height="268" rx="10" fill="#ffffff" stroke="#16a34a" stroke-width="1.8"/>
+  <rect x="424" y="50" width="370" height="46" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
+  <rect x="424" y="82" width="370" height="14" fill="#dcfce7"/>
+  <line x1="424" y1="96" x2="794" y2="96" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="609" y="78" text-anchor="middle" font-size="14.5" font-weight="700" fill="#14532d">СЕРВЕРНІ ДИСТРИБУТИВИ LINUX</text>
+
+  <circle cx="444" cy="124" r="3.5" fill="#16a34a"/>
+  <text x="456" y="128" font-size="12.5" fill="#1e293b">Гілка Debian: Debian, Ubuntu Server (.deb / apt)</text>
+
+  <circle cx="444" cy="156" r="3.5" fill="#16a34a"/>
+  <text x="456" y="160" font-size="12.5" fill="#1e293b">Гілка Red Hat: RHEL, Rocky, AlmaLinux (.rpm)</text>
+
+  <circle cx="444" cy="188" r="3.5" fill="#16a34a"/>
+  <text x="456" y="192" font-size="12.5" fill="#1e293b">Ліцензія: вільна GNU GPL (без оплати CAL)</text>
+
+  <circle cx="444" cy="220" r="3.5" fill="#16a34a"/>
+  <text x="456" y="224" font-size="12.5" fill="#1e293b">Інтерфейс: CLI / SSH, systemd, конфіги /etc</text>
+
+  <circle cx="444" cy="252" r="3.5" fill="#16a34a"/>
+  <text x="456" y="256" font-size="12.5" fill="#1e293b">Витрати RAM (без GUI): лише 150–400 МБ</text>
+
+  <circle cx="444" cy="284" r="3.5" fill="#16a34a"/>
+  <text x="456" y="288" font-size="12.5" font-weight="600" fill="#14532d">Ніша: хмари, веб-сервери, БД, контейнери</text>
+</svg>

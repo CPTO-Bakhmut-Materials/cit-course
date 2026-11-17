@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 365" width="100%" height="auto" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#d97706"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#dc2626"/>
+    </marker>
+    <marker id="arrow-indigo" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#4f46e5"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="365" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="400" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Синтаксис рядка завдання у планувальнику cron (crontab)</text>
+
+  <!-- Top Cron Expression Boxes -->
+  <!-- Field 1: Minute -->
+  <rect x="40" y="56" width="56" height="44" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="68" y="86" text-anchor="middle" font-size="24" font-weight="700" fill="#1e3a8a">*</text>
+
+  <!-- Field 2: Hour -->
+  <rect x="108" y="56" width="56" height="44" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="136" y="86" text-anchor="middle" font-size="24" font-weight="700" fill="#166534">*</text>
+
+  <!-- Field 3: Day of Month -->
+  <rect x="176" y="56" width="56" height="44" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="204" y="86" text-anchor="middle" font-size="24" font-weight="700" fill="#92400e">*</text>
+
+  <!-- Field 4: Month -->
+  <rect x="244" y="56" width="56" height="44" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="272" y="86" text-anchor="middle" font-size="24" font-weight="700" fill="#991b1b">*</text>
+
+  <!-- Field 5: Day of Week -->
+  <rect x="312" y="56" width="56" height="44" rx="8" fill="#e0e7ff" stroke="#4f46e5" stroke-width="2"/>
+  <text x="340" y="86" text-anchor="middle" font-size="24" font-weight="700" fill="#3730a3">*</text>
+
+  <!-- Field 6: Command -->
+  <rect x="394" y="56" width="366" height="44" rx="8" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+  <text x="577" y="83" text-anchor="middle" font-size="14.5" font-weight="700" fill="#0f172a">команда або шлях до скрипта</text>
+
+  <!-- Stepped Leader Lines (No Crossings) -->
+  <!-- 5 -> Row 1 -->
+  <polyline points="340,100 340,142 388,142" fill="none" stroke="#4f46e5" stroke-width="2" marker-end="url(#arrow-indigo)"/>
+  <!-- 4 -> Row 2 -->
+  <polyline points="272,100 272,188 388,188" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#arrow-red)"/>
+  <!-- 3 -> Row 3 -->
+  <polyline points="204,100 204,234 388,234" fill="none" stroke="#d97706" stroke-width="2" marker-end="url(#arrow-amber)"/>
+  <!-- 2 -> Row 4 -->
+  <polyline points="136,100 136,280 388,280" fill="none" stroke="#16a34a" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <!-- 1 -> Row 5 -->
+  <polyline points="68,100 68,326 388,326" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+  <!-- Description Cards on Right -->
+  <!-- Row 1: Day of week -->
+  <rect x="394" y="124" width="366" height="36" rx="7" fill="#e0e7ff" stroke="#4f46e5" stroke-width="1.6"/>
+  <text x="410" y="147" font-size="13.5" font-weight="700" fill="#3730a3">День тижня</text>
+  <text x="515" y="147" font-size="13" fill="#1e293b">(0 – 6, де 0 = неділя)</text>
+
+  <!-- Row 2: Month -->
+  <rect x="394" y="170" width="366" height="36" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="410" y="193" font-size="13.5" font-weight="700" fill="#991b1b">Місяць</text>
+  <text x="515" y="193" font-size="13" fill="#1e293b">(1 – 12)</text>
+
+  <!-- Row 3: Day of month -->
+  <rect x="394" y="216" width="366" height="36" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.6"/>
+  <text x="410" y="239" font-size="13.5" font-weight="700" fill="#92400e">День місяця</text>
+  <text x="515" y="239" font-size="13" fill="#1e293b">(1 – 31)</text>
+
+  <!-- Row 4: Hour -->
+  <rect x="394" y="262" width="366" height="36" rx="7" fill="#dcfce7" stroke="#16a34a" stroke-width="1.6"/>
+  <text x="410" y="285" font-size="13.5" font-weight="700" fill="#166534">Години</text>
+  <text x="515" y="285" font-size="13" fill="#1e293b">(0 – 23)</text>
+
+  <!-- Row 5: Minute -->
+  <rect x="394" y="308" width="366" height="36" rx="7" fill="#dbeafe" stroke="#2563eb" stroke-width="1.6"/>
+  <text x="410" y="331" font-size="13.5" font-weight="700" fill="#1e3a8a">Хвилини</text>
+  <text x="515" y="331" font-size="13" fill="#1e293b">(0 – 59)</text>
+</svg>

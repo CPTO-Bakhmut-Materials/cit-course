@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 360" width="100%" height="auto" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <rect width="820" height="360" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="410" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Етапи базового Hardening-налаштування сервера</text>
+
+  <!-- Left Column: Steps 1 -> 2 -> 3 -->
+  <rect x="36" y="58" width="348" height="78" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="54" y="84" font-size="14" font-weight="700" fill="#1e3a8a">1. Встановлення Hostname</text>
+  <text x="54" y="104" font-size="12.5" font-weight="600" fill="#1e40af">sudo hostnamectl set-hostname ...</text>
+  <text x="54" y="123" font-size="12" fill="#334155">Унікальна ідентифікація сервера в мережі</text>
+
+  <line x1="210" y1="136" x2="210" y2="152" stroke="#475569" stroke-width="2.2" marker-end="url(#arrow)"/>
+
+  <rect x="36" y="158" width="348" height="78" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="54" y="184" font-size="14" font-weight="700" fill="#1e3a8a">2. Часовий пояс і синхронізація NTP</text>
+  <text x="54" y="204" font-size="12.5" font-weight="600" fill="#1e40af">timedatectl set-timezone Europe/Kyiv</text>
+  <text x="54" y="223" font-size="12" fill="#334155">Точний час для TLS-сертифікатів і логів</text>
+
+  <line x1="210" y1="236" x2="210" y2="252" stroke="#475569" stroke-width="2.2" marker-end="url(#arrow)"/>
+
+  <rect x="36" y="258" width="348" height="78" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="54" y="284" font-size="14" font-weight="700" fill="#14532d">3. Оновлення репозиторіїв і ядра</text>
+  <text x="54" y="304" font-size="12.5" font-weight="600" fill="#15803d">sudo apt update &amp;&amp; sudo apt upgrade</text>
+  <text x="54" y="323" font-size="12" fill="#334155">Усунення відомих вразливостей безпеки</text>
+
+  <!-- Connector 3 -> 4 -->
+  <path d="M 384 297 L 410 297 L 410 97 L 428 97" fill="none" stroke="#475569" stroke-width="2.2" marker-end="url(#arrow)"/>
+
+  <!-- Right Column: Steps 4 -> 5 -> 6 -->
+  <rect x="436" y="58" width="348" height="78" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="454" y="84" font-size="14" font-weight="700" fill="#78350f">4. Генерація та копіювання SSH-ключів</text>
+  <text x="454" y="104" font-size="12.5" font-weight="600" fill="#b45309">ssh-keygen -t ed25519 / ssh-copy-id</text>
+  <text x="454" y="123" font-size="12" fill="#334155">Асиметрична автентифікація без пароля</text>
+
+  <line x1="610" y1="136" x2="610" y2="152" stroke="#475569" stroke-width="2.2" marker-end="url(#arrow)"/>
+
+  <rect x="436" y="158" width="348" height="78" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="454" y="184" font-size="14" font-weight="700" fill="#7f1d1d">5. Посилення захисту sshd_config</text>
+  <text x="454" y="204" font-size="12.5" font-weight="600" fill="#b91c1c">PermitRootLogin no, PasswordAuth no</text>
+  <text x="454" y="223" font-size="12" fill="#334155">Заборона входу root і підбору паролів</text>
+
+  <line x1="610" y1="236" x2="610" y2="252" stroke="#475569" stroke-width="2.2" marker-end="url(#arrow)"/>
+
+  <rect x="436" y="258" width="348" height="78" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="454" y="284" font-size="14" font-weight="700" fill="#7f1d1d">6. Налаштування брандмауера UFW</text>
+  <text x="454" y="304" font-size="12.5" font-weight="600" fill="#b91c1c">default deny incoming, allow OpenSSH</text>
+  <text x="454" y="323" font-size="12" fill="#334155">Фільтрація трафіку: відкрито лише потрібні порти</text>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 390" width="100%" height="auto" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="760" height="390" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="380" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Рівні корпоративних інформаційних систем</text>
+
+  <!-- Level 1: DSS -->
+  <rect x="190" y="56" width="380" height="72" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="380" y="84" text-anchor="middle" font-size="15" font-weight="700" fill="#92400e">Керівництво компанії (DSS)</text>
+  <text x="380" y="108" text-anchor="middle" font-size="13" fill="#451a03">Стратегічні рішення, аналітика та прогнозування</text>
+
+  <!-- Arrow 1 -> 2 -->
+  <line x1="380" y1="128" x2="380" y2="164" stroke="#475569" stroke-width="2.2" marker-end="url(#arrow)"/>
+
+  <!-- Level 2: ERP / CRM -->
+  <rect x="190" y="170" width="380" height="72" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="380" y="198" text-anchor="middle" font-size="15" font-weight="700" fill="#1e3a8a">Корпоративне ядро (ERP / CRM)</text>
+  <text x="380" y="222" text-anchor="middle" font-size="13" fill="#172554">Тактичне управління ресурсами та клієнтами</text>
+
+  <!-- Branching Arrows 2 -> 3 -->
+  <line x1="380" y1="242" x2="380" y2="266" stroke="#475569" stroke-width="2.2"/>
+  <line x1="195" y1="266" x2="565" y2="266" stroke="#475569" stroke-width="2.2"/>
+  <line x1="195" y1="266" x2="195" y2="292" stroke="#475569" stroke-width="2.2" marker-end="url(#arrow)"/>
+  <line x1="565" y1="266" x2="565" y2="292" stroke="#475569" stroke-width="2.2" marker-end="url(#arrow)"/>
+
+  <!-- Level 3 Left: TPS -->
+  <rect x="40" y="298" width="310" height="70" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="195" y="325" text-anchor="middle" font-size="15" font-weight="700" fill="#166534">Касові вузли, склади (TPS)</text>
+  <text x="195" y="348" text-anchor="middle" font-size="12.5" fill="#052e16">Реєстрація первинних операцій у реальному часі</text>
+
+  <!-- Level 3 Right: Operator Workstations -->
+  <rect x="410" y="298" width="310" height="70" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="565" y="325" text-anchor="middle" font-size="15" font-weight="700" fill="#991b1b">Робочі місця операторів</text>
+  <text x="565" y="348" text-anchor="middle" font-size="12.5" fill="#450a0a">Введення, перевірка та обробка даних (АРМ)</text>
+</svg>

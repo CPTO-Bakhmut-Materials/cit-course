@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 300" width="100%" height="auto" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <rect width="820" height="300" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="410" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Спеціалізовані апаратні блоки сучасного GPU</text>
+
+  <!-- Row 1: CUDA -->
+  <rect x="30" y="56" width="220" height="48" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
+  <text x="140" y="85" text-anchor="middle" font-size="14" font-weight="700" fill="#14532d">CUDA-ядра</text>
+  <line x1="250" y1="80" x2="288" y2="80" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="294" y="56" width="496" height="48" rx="8" fill="#ffffff" stroke="#86efac" stroke-width="1.5"/>
+  <text x="314" y="85" font-size="13" fill="#1e293b">Масивні паралельні обчислення геометрії 3D-сцен, шейдерів та ефектів</text>
+
+  <!-- Row 2: RT Cores -->
+  <rect x="30" y="114" width="220" height="48" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.8"/>
+  <text x="140" y="143" text-anchor="middle" font-size="14" font-weight="700" fill="#1e3a8a">RT-ядра (Ray Tracing)</text>
+  <line x1="250" y1="138" x2="288" y2="138" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="294" y="114" width="496" height="48" rx="8" fill="#ffffff" stroke="#93c5fd" stroke-width="1.5"/>
+  <text x="314" y="143" font-size="13" fill="#1e293b">Апаратний прорахунок фізики променів світла, тіней та віддзеркалень у 3D</text>
+
+  <!-- Row 3: Tensor Cores -->
+  <rect x="30" y="172" width="220" height="48" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="140" y="201" text-anchor="middle" font-size="14" font-weight="700" fill="#78350f">Tensor Cores (Тензорні)</text>
+  <line x1="250" y1="196" x2="288" y2="196" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="294" y="172" width="496" height="48" rx="8" fill="#ffffff" stroke="#fcd34d" stroke-width="1.5"/>
+  <text x="314" y="201" font-size="13" fill="#1e293b">ШІ-алгоритми, нейромережеве шумопоглинання (Denoising) та апскейлінг</text>
+
+  <!-- Row 4: NVENC -->
+  <rect x="30" y="230" width="220" height="48" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="140" y="259" text-anchor="middle" font-size="14" font-weight="700" fill="#991b1b">Енкодери NVENC</text>
+  <line x1="250" y1="254" x2="288" y2="254" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="294" y="230" width="496" height="48" rx="8" fill="#ffffff" stroke="#fca5a5" stroke-width="1.5"/>
+  <text x="314" y="259" font-size="13" fill="#1e293b">Апаратний експорт та кодування відео AV1, HEVC, ProRes без навантаження CPU</text>
+</svg>

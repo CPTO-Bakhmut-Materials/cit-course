@@ -1,0 +1,29 @@
+[book]
+title = "Комп’ютерні інформаційні технології"
+authors = ["Калюжний Владислав Юрійович"]
+language = "uk"
+src = "src"
+
+[build]
+build-dir = "book"
+create-missing = false
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "navy"
+additional-css = ["src/theme/lessons.css"]
+additional-js = ["src/theme/katex-render.js", "src/theme/uk-search-fix.js"]
+git-repository-url = "https://github.com/OWNER/REPO"
+edit-url-template = "https://github.com/OWNER/REPO/edit/main/books/computer-it/{path}"
+site-url = "/computer-it/"
+
+[output.html.search]
+enable = true
+limit-results = 20
+teaser-word-count = 30
+use-boolean-and = true
+boost-title = 2
+boost-hierarchy = 1
+boost-paragraph = 1
+expand = true
+heading-split-level = 2

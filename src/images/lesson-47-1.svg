@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 330" width="100%" height="auto" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrow-dark" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#dc2626"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#16a34a"/>
+    </marker>
+  </defs>
+
+  <rect width="840" height="330" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="420" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Чому після apt upgrade потрібен needrestart (оновлення бібліотек у RAM)</text>
+
+  <!-- Step 1: Disk update -->
+  <rect x="28" y="64" width="234" height="106" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="1.8"/>
+  <rect x="28" y="64" width="234" height="34" rx="10" fill="#bfdbfe" stroke="#2563eb" stroke-width="1.8"/>
+  <text x="145" y="86" text-anchor="middle" font-size="13" font-weight="700" fill="#1e3a8a">1. Заміна файлу на диску</text>
+  <text x="145" y="118" text-anchor="middle" font-size="12" font-weight="600" fill="#172554">sudo apt upgrade</text>
+  <text x="145" y="138" text-anchor="middle" font-size="11" fill="#1e40af">На диску записано нову</text>
+  <text x="145" y="155" text-anchor="middle" font-size="11" fill="#1e40af">бібліотеку libssl.so (без CVE)</text>
+
+  <!-- Arrow 1 -> 2 -->
+  <line x1="262" y1="117" x2="306" y2="117" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arrow-red)"/>
+  <text x="284" y="106" text-anchor="middle" font-size="10.5" font-weight="700" fill="#b91c1c">Але!</text>
+
+  <!-- Step 2: Old library in RAM -->
+  <rect x="312" y="64" width="240" height="106" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <rect x="312" y="64" width="240" height="34" rx="10" fill="#fecaca" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="432" y="86" text-anchor="middle" font-size="13" font-weight="700" fill="#7f1d1d">2. Стара копія в пам'яті (RAM)</text>
+  <text x="432" y="118" text-anchor="middle" font-size="12" font-weight="600" fill="#450a0a">Служби Nginx, SSH, БД</text>
+  <text x="432" y="138" text-anchor="middle" font-size="11" fill="#991b1b">Продовжують використовувати</text>
+  <text x="432" y="155" text-anchor="middle" font-size="11" fill="#991b1b">вразливу копію у пам'яті</text>
+
+  <!-- Arrow 2 -> 3 -->
+  <line x1="552" y1="117" x2="596" y2="117" stroke="#334155" stroke-width="2.2" marker-end="url(#arrow-dark)"/>
+  <text x="574" y="106" text-anchor="middle" font-size="10.5" font-weight="700" fill="#334155">Аудит</text>
+
+  <!-- Step 3: needrestart -->
+  <rect x="602" y="64" width="210" height="106" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <rect x="602" y="64" width="210" height="34" rx="10" fill="#fde68a" stroke="#d97706" stroke-width="1.8"/>
+  <text x="707" y="86" text-anchor="middle" font-size="13" font-weight="700" fill="#78350f">3. Пошук (needrestart)</text>
+  <text x="707" y="118" text-anchor="middle" font-size="12" font-weight="600" fill="#451a03">sudo needrestart -b</text>
+  <text x="707" y="138" text-anchor="middle" font-size="11" fill="#92400e">Виявляє застарілі служби</text>
+  <text x="707" y="155" text-anchor="middle" font-size="11" fill="#92400e">та маркер reboot-required</text>
+
+  <!-- Arrow 3 -> 4 (down) -->
+  <line x1="707" y1="170" x2="707" y2="206" stroke="#16a34a" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+
+  <!-- Step 4: Restart & Protection -->
+  <rect x="28" y="212" width="784" height="94" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
+  <text x="420" y="238" text-anchor="middle" font-size="14" font-weight="700" fill="#14532d">4. Завершення регламенту оновлення</text>
+  <text x="235" y="264" text-anchor="middle" font-size="12" font-weight="700" fill="#052e16">Перезапуск служб або ядра</text>
+  <text x="235" y="283" text-anchor="middle" font-size="11" fill="#166534">systemctl restart &lt;служба&gt; оновлює бібліотеку в RAM;</text>
+  <text x="235" y="298" text-anchor="middle" font-size="11" fill="#166534">для нового ядра — плановий reboot у вікно робіт</text>
+
+  <line x1="448" y1="252" x2="448" y2="298" stroke="#86efac" stroke-width="1.5"/>
+
+  <text x="630" y="264" text-anchor="middle" font-size="12" font-weight="700" fill="#052e16">Захист критичних версій</text>
+  <text x="630" y="283" text-anchor="middle" font-size="11" fill="#166534">apt-mark hold &lt;пакет&gt; фіксує поточну версію,</text>
+  <text x="630" y="298" text-anchor="middle" font-size="11" fill="#166534">а /var/log/apt/history.log зберігає аудит змін</text>
+</svg>

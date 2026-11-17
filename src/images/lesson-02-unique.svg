@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 430" width="100%" height="auto" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrow-dark" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#475569"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#dc2626"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#16a34a"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="820" height="430" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <!-- Main Title -->
+  <text x="410" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Цінність інформації: закон GIGO та осі класифікації</text>
+
+  <!-- Section 1: GIGO -->
+  <text x="28" y="58" font-size="13" font-weight="700" fill="#334155">1. Вплив якості даних на результат (принцип Garbage In, Garbage Out)</text>
+
+  <!-- Row 1: Bad Input -> System -> Bad Output -->
+  <rect x="28" y="68" width="230" height="68" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="143" y="88" text-anchor="middle" font-size="13" font-weight="700" fill="#991b1b">Неякісні дані (Сміття)</text>
+  <text x="143" y="106" text-anchor="middle" font-size="11.5" fill="#7f1d1d">Помилки, пропуск полів,</text>
+  <text x="143" y="122" text-anchor="middle" font-size="11.5" fill="#7f1d1d">застарілі ціни, дублікати</text>
+
+  <line x1="258" y1="102" x2="298" y2="102" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arrow-red)"/>
+
+  <rect x="304" y="68" width="210" height="68" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="409" y="90" text-anchor="middle" font-size="13" font-weight="700" fill="#92400e">Обробка в ІС</text>
+  <text x="409" y="108" text-anchor="middle" font-size="11.5" fill="#78350f">Алгоритми працюють</text>
+  <text x="409" y="124" text-anchor="middle" font-size="11.5" fill="#78350f">без вхідного контролю</text>
+
+  <line x1="514" y1="102" x2="554" y2="102" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arrow-red)"/>
+
+  <rect x="560" y="68" width="232" height="68" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="676" y="88" text-anchor="middle" font-size="13" font-weight="700" fill="#991b1b">Хибний результат</text>
+  <text x="676" y="106" text-anchor="middle" font-size="11.5" fill="#7f1d1d">Блокування транзакцій,</text>
+  <text x="676" y="122" text-anchor="middle" font-size="11.5" fill="#7f1d1d">фінансові збитки, збої</text>
+
+  <!-- Row 2: Quality Input -> Audit -> Value -->
+  <rect x="28" y="148" width="230" height="68" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
+  <text x="143" y="168" text-anchor="middle" font-size="13" font-weight="700" fill="#166534">Якісні дані (Еталон)</text>
+  <text x="143" y="186" text-anchor="middle" font-size="11.5" fill="#14532d">Достовірні, повні,</text>
+  <text x="143" y="202" text-anchor="middle" font-size="11.5" fill="#14532d">актуальні, зрозумілі</text>
+
+  <line x1="258" y1="182" x2="298" y2="182" stroke="#16a34a" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+
+  <rect x="304" y="148" width="210" height="68" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.8"/>
+  <text x="409" y="170" text-anchor="middle" font-size="13" font-weight="700" fill="#1e3a8a">Валідація оператора</text>
+  <text x="409" y="188" text-anchor="middle" font-size="11.5" fill="#1e40af">Regex, awk, grep, uniq:</text>
+  <text x="409" y="204" text-anchor="middle" font-size="11.5" fill="#1e40af">фільтрація та очищення</text>
+
+  <line x1="514" y1="182" x2="554" y2="182" stroke="#16a34a" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+
+  <rect x="560" y="148" width="232" height="68" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
+  <text x="676" y="168" text-anchor="middle" font-size="13" font-weight="700" fill="#166534">Цінна інформація</text>
+  <text x="676" y="186" text-anchor="middle" font-size="11.5" fill="#14532d">Усунення невизначеності,</text>
+  <text x="676" y="202" text-anchor="middle" font-size="11.5" fill="#14532d">безпомилкові рішення</text>
+
+  <!-- Divider -->
+  <line x1="28" y1="234" x2="792" y2="234" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="5 4"/>
+
+  <!-- Section 2: Classification -->
+  <text x="28" y="256" font-size="13" font-weight="700" fill="#334155">2. Чотири ключові ознаки класифікації інформації</text>
+
+  <!-- Card 1: Perception -->
+  <rect x="28" y="268" width="178" height="140" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.8"/>
+  <text x="117" y="290" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1e3a8a">За сприйняттям</text>
+  <line x1="42" y1="298" x2="192" y2="298" stroke="#93c5fd" stroke-width="1"/>
+  <text x="40" y="318" font-size="11.5" fill="#172554">• Візуальна (&gt;85%)</text>
+  <text x="40" y="338" font-size="11.5" fill="#172554">• Аудіальна (звук)</text>
+  <text x="40" y="358" font-size="11.5" fill="#172554">• Тактильна (дотик)</text>
+  <text x="40" y="378" font-size="11.5" fill="#172554">• Нюхова і смакова</text>
+  <text x="40" y="396" font-size="10.5" font-style="italic" fill="#1e40af">(органи чуття людини)</text>
+
+  <!-- Card 2: Digital Form -->
+  <rect x="222" y="268" width="178" height="140" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
+  <text x="311" y="290" text-anchor="middle" font-size="12.5" font-weight="700" fill="#166534">За формою подання</text>
+  <line x1="236" y1="298" x2="386" y2="298" stroke="#86efac" stroke-width="1"/>
+  <text x="234" y="318" font-size="11.5" fill="#052e16">• Текстова (UTF-8)</text>
+  <text x="234" y="338" font-size="11.5" fill="#052e16">• Числова (розрахунки)</text>
+  <text x="234" y="358" font-size="11.5" fill="#052e16">• Графічна (PNG, SVG)</text>
+  <text x="234" y="378" font-size="11.5" fill="#052e16">• Звукова та відео</text>
+  <text x="234" y="396" font-size="11.5" fill="#052e16">• Мультимедійна</text>
+
+  <!-- Card 3: Purpose -->
+  <rect x="416" y="268" width="178" height="140" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="505" y="290" text-anchor="middle" font-size="12.5" font-weight="700" fill="#92400e">За призначенням</text>
+  <line x1="430" y1="298" x2="580" y2="298" stroke="#fcd34d" stroke-width="1"/>
+  <text x="428" y="318" font-size="11.5" fill="#451a03">• Масова (новини)</text>
+  <text x="428" y="338" font-size="11.5" fill="#451a03">• Спеціальна фахова:</text>
+  <text x="436" y="356" font-size="11" fill="#78350f">- науково-технічна</text>
+  <text x="436" y="373" font-size="11" fill="#78350f">- управлінська, фінансова</text>
+  <text x="428" y="393" font-size="11.5" fill="#451a03">• Особиста (приватна)</text>
+
+  <!-- Card 4: Access & Law -->
+  <rect x="610" y="268" width="182" height="140" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="701" y="290" text-anchor="middle" font-size="12.5" font-weight="700" fill="#991b1b">За режимом доступу</text>
+  <line x1="624" y1="298" x2="778" y2="298" stroke="#fca5a5" stroke-width="1"/>
+  <text x="622" y="318" font-size="11.5" font-weight="600" fill="#166534">• Відкрита (публічна)</text>
+  <text x="622" y="338" font-size="11.5" font-weight="600" fill="#7f1d1d">• Обмеженого доступу:</text>
+  <text x="630" y="356" font-size="11" fill="#7f1d1d">- конфіденційна (ПД)</text>
+  <text x="630" y="373" font-size="11" fill="#7f1d1d">- службова (ДСК)</text>
+  <text x="630" y="390" font-size="11" fill="#7f1d1d">- таємна (держтаємниця)</text>
+</svg>

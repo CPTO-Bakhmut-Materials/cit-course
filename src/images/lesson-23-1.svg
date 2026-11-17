@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 390" width="100%" height="auto" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="390" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="400" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Периферійні пристрої інформаційних систем</text>
+
+  <!-- Central Host Bus Box -->
+  <rect x="170" y="54" width="460" height="52" rx="10" fill="#e2e8f0" stroke="#475569" stroke-width="1.8"/>
+  <text x="400" y="77" text-anchor="middle" font-size="14.5" font-weight="700" fill="#0f172a">Системний блок / Сервер (ОС та контролери)</text>
+  <text x="400" y="96" text-anchor="middle" font-size="12" fill="#334155">Інтерфейси: USB Type-C / USB4 • Thunderbolt 4 • Ethernet (RJ-45) • RS-232</text>
+
+  <!-- Connecting Lines -->
+  <line x1="250" y1="106" x2="142" y2="146" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="400" y1="106" x2="400" y2="146" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="550" y1="106" x2="658" y2="146" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Column 1: Input Devices -->
+  <rect x="24" y="152" width="236" height="214" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="1.8"/>
+  <rect x="24" y="152" width="236" height="38" rx="10" fill="#bfdbfe" stroke="#2563eb" stroke-width="1.8"/>
+  <text x="142" y="176" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1e3a8a">1. Пристрої введення</text>
+  <text x="40" y="216" font-size="12.5" fill="#172554">• Документ-сканери (ADF)</text>
+  <text x="40" y="242" font-size="12.5" fill="#172554">• 1D/2D штрихкод-сканери (QR)</text>
+  <text x="40" y="268" font-size="12.5" fill="#172554">• Смарт-картридери (RFID/NFC)</text>
+  <text x="40" y="294" font-size="12.5" fill="#172554">• Біометричні сканери</text>
+  <text x="40" y="320" font-size="12.5" fill="#172554">• Графічні планшети</text>
+  <text x="40" y="348" font-size="11.5" font-weight="600" fill="#1d4ed8">Оцифрування та ідентифікація</text>
+
+  <!-- Column 2: Output Devices -->
+  <rect x="282" y="152" width="236" height="214" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
+  <rect x="282" y="152" width="236" height="38" rx="10" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.8"/>
+  <text x="400" y="176" text-anchor="middle" font-size="14.5" font-weight="700" fill="#14532d">2. Пристрої виведення</text>
+  <text x="298" y="216" font-size="12.5" fill="#052e16">• Лазерні та LED-принтери</text>
+  <text x="298" y="242" font-size="12.5" fill="#052e16">• Струменеві та термопринтери</text>
+  <text x="298" y="268" font-size="12.5" fill="#052e16">• Мережеві БФП (MFP)</text>
+  <text x="298" y="294" font-size="12.5" fill="#052e16">• Плотери формату A1/A0</text>
+  <text x="298" y="320" font-size="12.5" fill="#052e16">• Сенсорні монітори</text>
+  <text x="298" y="348" font-size="11.5" font-weight="600" fill="#15803d">Друк і візуалізація документів</text>
+
+  <!-- Column 3: Storage & Switching -->
+  <rect x="540" y="152" width="236" height="214" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <rect x="540" y="152" width="236" height="38" rx="10" fill="#fde68a" stroke="#d97706" stroke-width="1.8"/>
+  <text x="658" y="176" text-anchor="middle" font-size="14.5" font-weight="700" fill="#78350f">3. Зберігання та комутація</text>
+  <text x="556" y="216" font-size="12.5" fill="#451a03">• Стрічкові накопичувачі LTO</text>
+  <text x="556" y="242" font-size="12.5" fill="#451a03">• Зовнішні дискові масиви DAS</text>
+  <text x="556" y="268" font-size="12.5" fill="#451a03">• KVM-перемикачі (консолі)</text>
+  <text x="556" y="294" font-size="12.5" fill="#451a03">• Локальні лінійно-інтерактивні</text>
+  <text x="564" y="314" font-size="12.5" fill="#451a03">ДБЖ (UPS)</text>
+  <text x="556" y="348" font-size="11.5" font-weight="600" fill="#b45309">Архівація та керування вузлами</text>
+</svg>

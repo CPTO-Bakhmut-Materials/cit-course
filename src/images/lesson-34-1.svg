@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" width="100%" height="auto" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#d97706"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#16a34a"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="350" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="400" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Архітектура двох каналів протоколу FTP</text>
+
+  <!-- Client Box -->
+  <rect x="24" y="54" width="184" height="270" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="1.8"/>
+  <rect x="24" y="54" width="184" height="40" rx="10" fill="#bfdbfe" stroke="#2563eb" stroke-width="1.8"/>
+  <text x="116" y="79" text-anchor="middle" font-size="15" font-weight="700" fill="#1e3a8a">Клієнт FTP</text>
+  <text x="116" y="118" text-anchor="middle" font-size="12.5" font-weight="600" fill="#172554">Програми-клієнти:</text>
+  <text x="116" y="138" text-anchor="middle" font-size="12" fill="#1e40af">ftp, curl, FileZilla</text>
+  <rect x="38" y="160" width="156" height="58" rx="6" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.2"/>
+  <text x="116" y="182" text-anchor="middle" font-size="12" font-weight="600" fill="#1e3a8a">Динамічний порт N</text>
+  <text x="116" y="201" text-anchor="middle" font-size="11.5" fill="#334155">(вище 1023 TCP)</text>
+  <text x="116" y="250" text-anchor="middle" font-size="11.5" fill="#1e3a8a">Працює за NAT</text>
+  <text x="116" y="268" text-anchor="middle" font-size="11.5" fill="#1e3a8a">та Firewall у мережі</text>
+  <text x="116" y="304" text-anchor="middle" font-size="11.5" font-weight="600" fill="#1d4ed8">Ініціатор сеансу</text>
+
+  <!-- Server Box -->
+  <rect x="592" y="54" width="184" height="270" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
+  <rect x="592" y="54" width="184" height="40" rx="10" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.8"/>
+  <text x="684" y="79" text-anchor="middle" font-size="15" font-weight="700" fill="#14532d">Сервер FTP (vsftpd)</text>
+  <rect x="606" y="108" width="156" height="48" rx="6" fill="#f0fdf4" stroke="#86efac" stroke-width="1.2"/>
+  <text x="684" y="128" text-anchor="middle" font-size="12" font-weight="700" fill="#14532d">Порт 21 TCP</text>
+  <text x="684" y="145" text-anchor="middle" font-size="11" fill="#166534">Керуючий канал</text>
+  <rect x="606" y="168" width="156" height="50" rx="6" fill="#fef3c7" stroke="#fcd34d" stroke-width="1.2"/>
+  <text x="684" y="189" text-anchor="middle" font-size="12" font-weight="700" fill="#78350f">Порт 20 TCP</text>
+  <text x="684" y="206" text-anchor="middle" font-size="11" fill="#92400e">Активний режим</text>
+  <rect x="606" y="230" width="156" height="52" rx="6" fill="#f0fdf4" stroke="#4ade80" stroke-width="1.4"/>
+  <text x="684" y="251" text-anchor="middle" font-size="12" font-weight="700" fill="#14532d">Порти 40000–40100</text>
+  <text x="684" y="268" text-anchor="middle" font-size="11" fill="#166534">Пасивний режим (PASV)</text>
+  <text x="684" y="304" text-anchor="middle" font-size="11.5" font-weight="600" fill="#15803d">Ізоляція: chroot jail</text>
+
+  <!-- Channel 1: Control Connection -->
+  <rect x="224" y="54" width="352" height="106" rx="8" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.4"/>
+  <text x="400" y="74" text-anchor="middle" font-size="13" font-weight="700" fill="#1e3a8a">1. Керуючий канал (Control Connection)</text>
+  <line x1="210" y1="100" x2="586" y2="100" stroke="#2563eb" stroke-width="2.2" marker-end="url(#arrow-blue)"/>
+  <text x="400" y="94" text-anchor="middle" font-size="11.5" font-weight="600" fill="#1e40af">TCP-порт 21: USER, PASS, LIST, RETR, STOR</text>
+  <line x1="590" y1="132" x2="214" y2="132" stroke="#2563eb" stroke-width="2.2" marker-end="url(#arrow-blue)"/>
+  <text x="400" y="126" text-anchor="middle" font-size="11.5" fill="#172554">Коди відповідей: 220 Ready • 230 Login OK • 550</text>
+  <text x="400" y="150" text-anchor="middle" font-size="11" fill="#475569">Постійне з'єднання протягом усього сеансу</text>
+
+  <!-- Channel 2: Data Connection -->
+  <rect x="224" y="172" width="352" height="152" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="400" y="192" text-anchor="middle" font-size="13" font-weight="700" fill="#0f172a">2. Канал даних (Data Connection)</text>
+
+  <!-- Active FTP -->
+  <rect x="234" y="202" width="332" height="50" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.2"/>
+  <line x1="590" y1="226" x2="214" y2="226" stroke="#d97706" stroke-width="2.2" marker-end="url(#arrow-amber)"/>
+  <text x="400" y="218" text-anchor="middle" font-size="11.5" font-weight="700" fill="#78350f">Активний режим: сервер (порт 20) → клієнт (порт N)</text>
+  <text x="400" y="244" text-anchor="middle" font-size="11" fill="#92400e">Вхідне з'єднання часто блокується NAT або Firewall</text>
+
+  <!-- Passive FTP -->
+  <rect x="234" y="260" width="332" height="54" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.4"/>
+  <line x1="210" y1="286" x2="586" y2="286" stroke="#16a34a" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+  <text x="400" y="278" text-anchor="middle" font-size="11.5" font-weight="700" fill="#14532d">Пасивний режим (PASV): клієнт → порти 40000–40100</text>
+  <text x="400" y="304" text-anchor="middle" font-size="11" fill="#166534">Сучасний стандарт: вільно проходить через роутер і NAT</text>
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 430" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="780" height="430" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="390" y="28" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a">Модель обліку техніки та заявок на ремонт (PlantUML)</text>
+
+  <!-- Entity: EMPLOYEE (top-left) -->
+  <rect x="40" y="54" width="220" height="128" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+  <rect x="40" y="54" width="220" height="30" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <rect x="40" y="76" width="220" height="8" fill="#dbeafe"/>
+  <line x1="40" y1="84" x2="260" y2="84" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="150" y="74" text-anchor="middle" font-size="13" font-weight="700" fill="#1e3a8a">EMPLOYEE</text>
+  <text x="52" y="105" font-size="11.5" font-weight="700" fill="#1e3a8a">* emp_id : INT &lt;&lt;PK&gt;&gt;</text>
+  <text x="52" y="126" font-size="11.5" fill="#334155">* full_name : VARCHAR(100)</text>
+  <text x="52" y="146" font-size="11.5" fill="#334155">* department : VARCHAR(50)</text>
+  <text x="52" y="166" font-size="11.5" fill="#334155">* email : VARCHAR(80)</text>
+
+  <!-- Entity: HARDWARE (top-right) -->
+  <rect x="510" y="54" width="230" height="148" rx="8" fill="#ffffff" stroke="#16a34a" stroke-width="2"/>
+  <rect x="510" y="54" width="230" height="30" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <rect x="510" y="76" width="230" height="8" fill="#dcfce7"/>
+  <line x1="510" y1="84" x2="740" y2="84" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="625" y="74" text-anchor="middle" font-size="13" font-weight="700" fill="#14532d">HARDWARE</text>
+  <text x="522" y="105" font-size="11.5" font-weight="700" fill="#14532d">* hw_id : INT &lt;&lt;PK&gt;&gt;</text>
+  <text x="522" y="126" font-size="11.5" fill="#334155">* inv_number : VARCHAR(16)</text>
+  <text x="522" y="146" font-size="11.5" fill="#334155">* hw_type : VARCHAR(20)</text>
+  <text x="522" y="166" font-size="11.5" font-weight="600" fill="#b45309">  assigned_to : INT &lt;&lt;FK&gt;&gt;</text>
+  <text x="522" y="186" font-size="11.5" fill="#334155">* status : VARCHAR(15)</text>
+
+  <!-- Entity: SERVICE_REQUEST (bottom-center) -->
+  <rect x="265" y="250" width="250" height="162" rx="8" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
+  <rect x="265" y="250" width="250" height="30" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <rect x="265" y="272" width="250" height="8" fill="#fef3c7"/>
+  <line x1="265" y1="280" x2="515" y2="280" stroke="#d97706" stroke-width="1.5"/>
+  <text x="390" y="270" text-anchor="middle" font-size="13" font-weight="700" fill="#78350f">SERVICE_REQUEST</text>
+  <text x="277" y="301" font-size="11.5" font-weight="700" fill="#78350f">* req_id : INT &lt;&lt;PK&gt;&gt;</text>
+  <text x="277" y="322" font-size="11.5" font-weight="600" fill="#b45309">* hw_id : INT &lt;&lt;FK&gt;&gt;</text>
+  <text x="277" y="342" font-size="11.5" font-weight="600" fill="#b45309">* emp_id : INT &lt;&lt;FK&gt;&gt;</text>
+  <text x="277" y="362" font-size="11.5" fill="#334155">* problem_desc : TEXT</text>
+  <text x="277" y="382" font-size="11.5" fill="#334155">* created_at : TIMESTAMP</text>
+  <text x="277" y="402" font-size="11.5" fill="#334155">  is_closed : BOOLEAN</text>
+
+  <!-- Relation 1: EMPLOYEE to HARDWARE -->
+  <line x1="260" y1="118" x2="510" y2="118" stroke="#1e293b" stroke-width="2"/>
+  <line x1="271" y1="110" x2="271" y2="126" stroke="#1e293b" stroke-width="2"/>
+  <line x1="277" y1="110" x2="277" y2="126" stroke="#1e293b" stroke-width="2"/>
+  <circle cx="490" cy="118" r="4.5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+  <line x1="497" y1="118" x2="510" y2="110" stroke="#1e293b" stroke-width="2"/>
+  <line x1="497" y1="118" x2="510" y2="126" stroke="#1e293b" stroke-width="2"/>
+  <text x="385" y="108" text-anchor="middle" font-size="11.5" font-weight="600" fill="#0f172a">закріплено за</text>
+
+  <!-- Relation 2: EMPLOYEE to SERVICE_REQUEST -->
+  <path d="M 150 182 L 150 326 L 265 326" fill="none" stroke="#1e293b" stroke-width="2"/>
+  <line x1="142" y1="193" x2="158" y2="193" stroke="#1e293b" stroke-width="2"/>
+  <line x1="142" y1="199" x2="158" y2="199" stroke="#1e293b" stroke-width="2"/>
+  <circle cx="245" cy="326" r="4.5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+  <line x1="252" y1="326" x2="265" y2="318" stroke="#1e293b" stroke-width="2"/>
+  <line x1="252" y1="326" x2="265" y2="334" stroke="#1e293b" stroke-width="2"/>
+  <text x="158" y="256" font-size="11.5" font-weight="600" fill="#0f172a">подає заявку</text>
+
+  <!-- Relation 3: HARDWARE to SERVICE_REQUEST -->
+  <path d="M 625 202 L 625 326 L 515 326" fill="none" stroke="#1e293b" stroke-width="2"/>
+  <line x1="617" y1="213" x2="633" y2="213" stroke="#1e293b" stroke-width="2"/>
+  <line x1="617" y1="219" x2="633" y2="219" stroke="#1e293b" stroke-width="2"/>
+  <circle cx="535" cy="326" r="4.5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+  <line x1="528" y1="326" x2="515" y2="318" stroke="#1e293b" stroke-width="2"/>
+  <line x1="528" y1="326" x2="515" y2="334" stroke="#1e293b" stroke-width="2"/>
+  <text x="615" y="266" text-anchor="end" font-size="11.5" font-weight="600" fill="#0f172a">обслуговується за</text>
+</svg>

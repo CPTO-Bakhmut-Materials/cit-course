@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 360" width="100%" height="auto" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <rect width="820" height="360" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="410" y="32" text-anchor="middle" font-size="17" font-weight="700" fill="#0f172a">Структура програмного забезпечення (ПЗ)</text>
+
+  <!-- Root node -->
+  <rect x="260" y="46" width="300" height="34" rx="8" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+  <text x="410" y="68" text-anchor="middle" font-size="13.5" font-weight="700" fill="#0f172a">Програмне забезпечення (Software)</text>
+
+  <!-- Connector lines -->
+  <path d="M 410 80 L 410 95 L 148 95 L 148 110" fill="none" stroke="#475569" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <line x1="410" y1="80" x2="410" y2="110" stroke="#475569" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <path d="M 410 95 L 672 95 L 672 110" fill="none" stroke="#475569" stroke-width="1.8" marker-end="url(#arrow)"/>
+
+  <!-- Col 1: System Software -->
+  <rect x="26" y="114" width="244" height="224" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="1.8"/>
+  <rect x="26" y="114" width="244" height="40" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="1.8"/>
+  <rect x="26" y="140" width="244" height="14" fill="#dbeafe"/>
+  <line x1="26" y1="154" x2="270" y2="154" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="148" y="139" text-anchor="middle" font-size="14" font-weight="700" fill="#1e3a8a">1. Системне ПЗ</text>
+
+  <circle cx="44" cy="179" r="3.5" fill="#2563eb"/>
+  <text x="56" y="183" font-size="12.5" font-weight="600" fill="#1e293b">Операційні системи</text>
+  <text x="56" y="199" font-size="11.5" fill="#475569">(Linux, Windows, macOS)</text>
+
+  <circle cx="44" cy="224" r="3.5" fill="#2563eb"/>
+  <text x="56" y="228" font-size="12.5" fill="#1e293b">Драйвери обладнання</text>
+
+  <circle cx="44" cy="254" r="3.5" fill="#2563eb"/>
+  <text x="56" y="258" font-size="12.5" fill="#1e293b">Системні служби та демони</text>
+
+  <circle cx="44" cy="284" r="3.5" fill="#2563eb"/>
+  <text x="56" y="288" font-size="12.5" fill="#1e293b">Утиліти дисків і мережі</text>
+  <text x="56" y="304" font-size="11.5" fill="#475569">(fdisk, GParted, резервування)</text>
+
+  <!-- Col 2: Tool Software -->
+  <rect x="288" y="114" width="244" height="224" rx="10" fill="#ffffff" stroke="#16a34a" stroke-width="1.8"/>
+  <rect x="288" y="114" width="244" height="40" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
+  <rect x="288" y="140" width="244" height="14" fill="#dcfce7"/>
+  <line x1="288" y1="154" x2="532" y2="154" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="410" y="139" text-anchor="middle" font-size="14" font-weight="700" fill="#14532d">2. Інструментальне ПЗ</text>
+
+  <circle cx="306" cy="179" r="3.5" fill="#16a34a"/>
+  <text x="318" y="183" font-size="12.5" fill="#1e293b">Середовища розробки (IDE)</text>
+  <text x="318" y="199" font-size="11.5" fill="#475569">(VS Code, PyCharm, Eclipse)</text>
+
+  <circle cx="306" cy="224" r="3.5" fill="#16a34a"/>
+  <text x="318" y="228" font-size="12.5" fill="#1e293b">Компілятори й інтерпретатори</text>
+
+  <circle cx="306" cy="254" r="3.5" fill="#16a34a"/>
+  <text x="318" y="258" font-size="12.5" fill="#1e293b">Системи контролю версій (Git)</text>
+
+  <circle cx="306" cy="284" r="3.5" fill="#16a34a"/>
+  <text x="318" y="288" font-size="12.5" fill="#1e293b">СКБД (PostgreSQL, SQLite)</text>
+
+  <circle cx="306" cy="314" r="3.5" fill="#16a34a"/>
+  <text x="318" y="318" font-size="12.5" fill="#1e293b">Налагоджувачі (Debuggers)</text>
+
+  <!-- Col 3: Application Software -->
+  <rect x="550" y="114" width="244" height="224" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="1.8"/>
+  <rect x="550" y="114" width="244" height="40" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <rect x="550" y="140" width="244" height="14" fill="#fef3c7"/>
+  <line x1="550" y1="154" x2="794" y2="154" stroke="#d97706" stroke-width="1.5"/>
+  <text x="672" y="139" text-anchor="middle" font-size="14" font-weight="700" fill="#78350f">3. Прикладне ПЗ</text>
+
+  <text x="566" y="177" font-size="12" font-weight="700" fill="#92400e">А. Загального призначення:</text>
+  <circle cx="570" cy="197" r="3.5" fill="#d97706"/>
+  <text x="582" y="201" font-size="12" fill="#1e293b">Офісні пакети (LibreOffice)</text>
+  <circle cx="570" cy="219" r="3.5" fill="#d97706"/>
+  <text x="582" y="223" font-size="12" fill="#1e293b">Браузери, PDF, архіватори</text>
+  <circle cx="570" cy="241" r="3.5" fill="#d97706"/>
+  <text x="582" y="245" font-size="12" fill="#1e293b">Графічні редактори (GIMP)</text>
+
+  <line x1="566" y1="258" x2="778" y2="258" stroke="#fde68a" stroke-width="1.5"/>
+
+  <text x="566" y="276" font-size="12" font-weight="700" fill="#92400e">Б. Спеціального призначення:</text>
+  <circle cx="570" cy="296" r="3.5" fill="#d97706"/>
+  <text x="582" y="300" font-size="12" fill="#1e293b">1C / BAS / ERP / СЕД</text>
+  <circle cx="570" cy="318" r="3.5" fill="#d97706"/>
+  <text x="582" y="322" font-size="12" fill="#1e293b">САПР (AutoCAD, FreeCAD)</text>
+</svg>

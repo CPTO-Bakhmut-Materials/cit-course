@@ -1,0 +1,158 @@
+{
+  "book": "computer-it",
+  "lesson_id": "lesson-28",
+  "title": "Урок 28. Серверні операційні системи сімейств Windows та Linux",
+  "description": "Контрольний тест до уроку 28 з предмета «Комп’ютерні інформаційні технології» (10 запитань, 10 балів). Оберіть одну правильну відповідь.",
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "question": "Яка служба Windows Server відповідає за централізоване зберігання облікових записів і єдину точку входу в корпоративний домен?",
+      "options": [
+        "Active Directory Domain Services (AD DS)",
+        "Windows Media Player Network Sharing",
+        "DirectX Graphics Diagnostic Service",
+        "Cortana Voice Recognition Services"
+      ],
+      "correct_index": 0,
+      "points": 1,
+      "feedback_correct": "Правильно! AD DS є основою побудови корпоративного домену в середовищі Windows Server.",
+      "feedback_incorrect": "Неправильно. Централізоване управління обліковими записами здійснює Active Directory Domain Services (AD DS)."
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "question": "Що являє собою варіант розгортання «Server Core» у Windows Server?",
+      "options": [
+        "Установку без графічного інтерфейсу (GUI) з керуванням через PowerShell та віддалені засоби",
+        "Безкоштовну версію системи виключно для домашніх комп'ютерів",
+        "Режим, у якому дозволено працювати лише одній програмі «Блокнот»",
+        "Спеціальну версію для встановлення на мобільні телефони"
+      ],
+      "correct_index": 0,
+      "points": 1,
+      "feedback_correct": "Правильно! Server Core не містить звичного робочого столу і керується через CLI/PowerShell, що підвищує захист і заощаджує ресурси.",
+      "feedback_incorrect": "Неправильно. Server Core — це варіант установки без GUI, орієнтований на керування через командний рядок та PowerShell."
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "question": "Що означає абревіатура CAL (Client Access License) у схемі ліцензування Windows Server?",
+      "options": [
+        "Кабель для підключення адаптера живлення",
+        "Клієнтська ліцензія доступу, що надає право користувачеві чи пристрою взаємодіяти зі службами сервера",
+        "Спеціальний процесорний регістр для обчислення логарифмів",
+        "Програма для автоматичного підрахунку заробітної плати"
+      ],
+      "correct_index": 1,
+      "points": 1,
+      "feedback_correct": "Правильно! CAL (Client Access License) купується на кожного користувача або кожен робочий пристрій, що звертається до сервера.",
+      "feedback_incorrect": "Неправильно. CAL — це ліцензія клієнтського доступу, обов'язкова для легального підключення користувачів або пристроїв до сервера."
+    },
+    {
+      "id": 4,
+      "type": "multiple_choice",
+      "question": "Яка ключова фінансова перевага розгортання сервера на базі дистрибутивів Linux (Debian, Ubuntu Server)?",
+      "options": [
+        "Повна відсутність вартості ліцензій на ядра процесора та відсутність необхідності купувати ліцензії CAL",
+        "Операційні системи Linux дозволяють отримувати грошову винагороду за кожен день роботи сервера",
+        "Усі комплектуючі сервера стають автоматично безкоштовними",
+        "Linux звільняє підприємство від сплати будь-яких комунальних платежів"
+      ],
+      "correct_index": 0,
+      "points": 1,
+      "feedback_correct": "Правильно! Більшість серверних Linux-систем поширюються за вільною ліцензією GNU GPL без оплати ліцензій на ядра та клієнтські підключення.",
+      "feedback_incorrect": "Неправильно. Головна перевага — вільна ліцензія (Open Source): відсутність витрат на придбання ліцензій на ядра ОС та CAL."
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "question": "Який менеджер керування пакунками використовується в серверних дистрибутивах Debian та Ubuntu Server?",
+      "options": [
+        "apt",
+        "dnf",
+        "pacman",
+        "winget"
+      ],
+      "correct_index": 0,
+      "points": 1,
+      "feedback_correct": "Правильно! У дистрибутивах родини Debian/Ubuntu основним інструментом керування пакетами є apt (Advanced Package Tool).",
+      "feedback_incorrect": "Неправильно. У Debian та Ubuntu Server використовується пакетний менеджер apt."
+    },
+    {
+      "id": 6,
+      "type": "multiple_choice",
+      "question": "Яка підсистема примусового контролю доступу (MAC) інтегрована за замовчуванням у дистрибутивах сімейства Red Hat (RHEL, Rocky Linux)?",
+      "options": [
+        "BitLocker",
+        "SELinux (Security-Enhanced Linux)",
+        "Windows Defender",
+        "AppLocker"
+      ],
+      "correct_index": 1,
+      "points": 1,
+      "feedback_correct": "Правильно! SELinux забезпечує жорстку політику безпеки та ізоляцію процесів у RHEL-сумісних системах.",
+      "feedback_incorrect": "Неправильно. У дистрибутивах сімейства Red Hat стандартом безпеки є підсистема SELinux."
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "question": "Яка команда Linux є еквівалентом командлета Windows PowerShell «Get-Service» для моніторингу статусу служб?",
+      "options": [
+        "systemctl status",
+        "chmod 777",
+        "nano /etc/hosts",
+        "cat /proc/cpuinfo"
+      ],
+      "correct_index": 0,
+      "points": 1,
+      "feedback_correct": "Правильно! Команда systemctl status перевіряє стан системних служб у Linux під керуванням systemd.",
+      "feedback_incorrect": "Неправильно. Для керування та моніторингу служб у Linux застосовується утиліта systemctl (наприклад, systemctl status)."
+    },
+    {
+      "id": 8,
+      "type": "multiple_choice",
+      "question": "Скільки віртуальних машин дозволяє запускати на одному фізичному сервері одна ліцензія Windows Server Standard?",
+      "options": [
+        "Не більше 2 віртуальних машин",
+        "Рівно 500 віртуальних машин",
+        "Необмежену кількість віртуальних машин",
+        "Віртуалізація в редакції Standard повністю заблокована"
+      ],
+      "correct_index": 0,
+      "points": 1,
+      "feedback_correct": "Правильно! Редакція Standard дозволяє запускати лише до двох віртуальних середовищ (Operating System Environments — OSE).",
+      "feedback_incorrect": "Неправильно. Ліцензія Windows Server Standard включає право на запуск до 2 віртуальних машин (на відміну від Datacenter з безлімітом)."
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "question": "Яка команда в Linux відображає інформацію про змонтовані дискові розділи та вільне місце у зручному для читання форматі (ГБ, МБ)?",
+      "options": [
+        "df -h",
+        "free -m",
+        "uname -r",
+        "ls -la"
+      ],
+      "correct_index": 0,
+      "points": 1,
+      "feedback_correct": "Правильно! Команда df з ключем -h (human-readable) виводить таблицю дискового простору в МБ та ГБ.",
+      "feedback_incorrect": "Неправильно. Дисковий простір розділів відображає команда df -h."
+    },
+    {
+      "id": 10,
+      "type": "multiple_choice",
+      "question": "У чому полягає фундаментальна відмінність конвеєра даних (пайплайну |) у PowerShell порівняно з Linux Bash?",
+      "options": [
+        "PowerShell передає між командами типізовані .NET-об'єкти з властивостями, а Bash — текстовий потік символів",
+        "PowerShell взагалі не підтримує символ конвеєра |",
+        "Bash передає виключно звукові сигнали системного динаміка",
+        "Конвеєр у PowerShell працює лише за наявності підключення до мережі інтернет"
+      ],
+      "correct_index": 0,
+      "points": 1,
+      "feedback_correct": "Правильно! PowerShell є об'єктно-орієнтованою оболонкою, тоді як традиційні утиліти Unix/Linux орієнтовані на потік тексту.",
+      "feedback_incorrect": "Неправильно. Головна різниця в тому, що PowerShell передає типізовані об'єкти з властивостями, а Bash передає неструктурований текст."
+    }
+  ]
+}

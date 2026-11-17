@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 465" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <marker id="sync-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 1 1 L 9 5 L 1 9 z" fill="#1e293b"/>
+    </marker>
+    <marker id="reply-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 2 1.5 L 9 5 L 2 8.5" fill="none" stroke="#475569" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="time-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 1 1 L 9 5 L 1 9 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect width="780" height="465" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="390" y="28" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a">Діаграма послідовності: сценарій автентифікації учня</text>
+
+  <!-- Time Axis on the Left -->
+  <line x1="24" y1="108" x2="24" y2="425" stroke="#94a3b8" stroke-width="1.8" marker-end="url(#time-arrow)"/>
+  <text x="16" y="265" text-anchor="middle" font-size="12" font-weight="600" fill="#64748b" transform="rotate(-90 16 265)">Вісь часу</text>
+
+  <!-- Participants Header -->
+  <!-- 1. Actor: Student -->
+  <circle cx="105" cy="54" r="9" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <line x1="105" y1="63" x2="105" y2="82" stroke="#2563eb" stroke-width="2"/>
+  <line x1="92" y1="71" x2="118" y2="71" stroke="#2563eb" stroke-width="2"/>
+  <line x1="105" y1="82" x2="95" y2="94" stroke="#2563eb" stroke-width="2"/>
+  <line x1="105" y1="82" x2="115" y2="94" stroke="#2563eb" stroke-width="2"/>
+  <text x="105" y="109" text-anchor="middle" font-size="13" font-weight="700" fill="#1e3a8a">Учень</text>
+
+  <!-- 2. Web UI -->
+  <rect x="205" y="50" width="144" height="44" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="277" y="77" text-anchor="middle" font-size="13" font-weight="700" fill="#1e3a8a">Веб-інтерфейс</text>
+
+  <!-- 3. Auth Service -->
+  <rect x="398" y="50" width="164" height="44" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="480" y="77" text-anchor="middle" font-size="13" font-weight="700" fill="#14532d">Сервер авторизації</text>
+
+  <!-- 4. Database -->
+  <rect x="614" y="50" width="132" height="44" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="680" y="77" text-anchor="middle" font-size="13" font-weight="700" fill="#78350f">База даних</text>
+
+  <!-- Lifelines -->
+  <line x1="105" y1="115" x2="105" y2="442" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="5,5"/>
+  <line x1="277" y1="94" x2="277" y2="442" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="5,5"/>
+  <line x1="480" y1="94" x2="480" y2="442" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="5,5"/>
+  <line x1="680" y1="94" x2="680" y2="442" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="5,5"/>
+
+  <!-- Combined Fragment alt -->
+  <rect x="60" y="278" width="510" height="154" rx="4" fill="#ffffff" fill-opacity="0.7" stroke="#64748b" stroke-width="1.8"/>
+  <polygon points="60,278 106,278 106,294 96,302 60,302" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5"/>
+  <text x="80" y="294" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">alt</text>
+  <text x="116" y="295" font-size="12" font-weight="600" fill="#15803d">[Користувача знайдено і хеш збігається]</text>
+
+  <!-- Else divider -->
+  <line x1="60" y1="362" x2="570" y2="362" stroke="#64748b" stroke-width="1.4" stroke-dasharray="6,4"/>
+  <rect x="60" y="362" width="510" height="70" fill="#fee2e2" fill-opacity="0.35"/>
+  <text x="72" y="378" font-size="12" font-weight="600" fill="#b91c1c">[Облікові дані невірні]</text>
+
+  <!-- Activation Bars -->
+  <rect x="272" y="132" width="10" height="292" rx="2" fill="#bfdbfe" stroke="#2563eb" stroke-width="1.4"/>
+  <rect x="475" y="196" width="10" height="210" rx="2" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.4"/>
+  <rect x="675" y="226" width="10" height="36" rx="2" fill="#fde68a" stroke="#d97706" stroke-width="1.4"/>
+
+  <!-- Messages -->
+  <!-- 1: Student -> UI -->
+  <text x="191" y="127" text-anchor="middle" font-size="12" fill="#0f172a">1: Введення логіна і пароля</text>
+  <line x1="105" y1="134" x2="270" y2="134" stroke="#1e293b" stroke-width="1.8" marker-end="url(#sync-arrow)"/>
+
+  <!-- 2: Self-call on UI -->
+  <path d="M 282 150 L 322 150 L 322 172 L 284 172" fill="none" stroke="#1e293b" stroke-width="1.8" marker-end="url(#sync-arrow)"/>
+  <text x="328" y="165" font-size="12" fill="#0f172a">2: Валідація полів()</text>
+
+  <!-- 3: UI -> Auth -->
+  <text x="378" y="191" text-anchor="middle" font-size="12" fill="#0f172a">3: POST /api/login</text>
+  <line x1="282" y1="198" x2="473" y2="198" stroke="#1e293b" stroke-width="1.8" marker-end="url(#sync-arrow)"/>
+
+  <!-- 4: Auth -> DB -->
+  <text x="580" y="221" text-anchor="middle" font-size="12" fill="#0f172a">4: SELECT password_hash</text>
+  <line x1="485" y1="228" x2="673" y2="228" stroke="#1e293b" stroke-width="1.8" marker-end="url(#sync-arrow)"/>
+
+  <!-- 5: DB --> Auth (Reply) -->
+  <text x="580" y="253" text-anchor="middle" font-size="12" fill="#475569">5: Хеш пароля або null</text>
+  <line x1="675" y1="260" x2="487" y2="260" stroke="#475569" stroke-width="1.8" stroke-dasharray="5,4" marker-end="url(#reply-arrow)"/>
+
+  <!-- 6: Auth --> UI (200 OK) -->
+  <text x="378" y="315" text-anchor="middle" font-size="12" font-weight="600" fill="#14532d">6: 200 OK + JWT-токен</text>
+  <line x1="475" y1="322" x2="284" y2="322" stroke="#15803d" stroke-width="1.8" stroke-dasharray="5,4" marker-end="url(#reply-arrow)"/>
+
+  <!-- 7: UI --> Student -->
+  <text x="191" y="343" text-anchor="middle" font-size="12" font-weight="600" fill="#14532d">7: Відкрити кабінет</text>
+  <line x1="272" y1="350" x2="107" y2="350" stroke="#15803d" stroke-width="1.8" stroke-dasharray="5,4" marker-end="url(#reply-arrow)"/>
+
+  <!-- 8: Auth --> UI (401) -->
+  <text x="378" y="394" text-anchor="middle" font-size="12" font-weight="600" fill="#991b1b">8: 401 Unauthorized</text>
+  <line x1="475" y1="401" x2="284" y2="401" stroke="#b91c1c" stroke-width="1.8" stroke-dasharray="5,4" marker-end="url(#reply-arrow)"/>
+
+  <!-- 9: UI --> Student (Error) -->
+  <text x="191" y="416" text-anchor="middle" font-size="12" font-weight="600" fill="#991b1b">9: Невірний логін/пароль</text>
+  <line x1="272" y1="423" x2="107" y2="423" stroke="#b91c1c" stroke-width="1.8" stroke-dasharray="5,4" marker-end="url(#reply-arrow)"/>
+</svg>

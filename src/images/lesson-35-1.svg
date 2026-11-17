@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" width="100%" height="auto" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrow-slate" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#dc2626"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="350" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="400" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Схема роботи прямого проксі-сервера Squid</text>
+
+  <!-- Client -->
+  <rect x="24" y="66" width="168" height="200" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="1.8"/>
+  <rect x="24" y="66" width="168" height="38" rx="10" fill="#bfdbfe" stroke="#2563eb" stroke-width="1.8"/>
+  <text x="108" y="90" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1e3a8a">Комп'ютер клієнта</text>
+  <text x="108" y="128" text-anchor="middle" font-size="12" font-weight="600" fill="#172554">Локальна мережа</text>
+  <text x="108" y="148" text-anchor="middle" font-size="12" fill="#1e40af">192.168.1.50</text>
+  <rect x="38" y="168" width="140" height="46" rx="6" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.2"/>
+  <text x="108" y="188" text-anchor="middle" font-size="11.5" font-weight="600" fill="#1e3a8a">Браузер або curl</text>
+  <text x="108" y="205" text-anchor="middle" font-size="11" fill="#334155">Шлюз: порт 3128 TCP</text>
+  <text x="108" y="246" text-anchor="middle" font-size="11.5" font-weight="600" fill="#1d4ed8">Не має прямого виходу</text>
+
+  <!-- Squid Proxy -->
+  <rect x="276" y="54" width="248" height="226" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <rect x="276" y="54" width="248" height="38" rx="10" fill="#fde68a" stroke="#d97706" stroke-width="1.8"/>
+  <text x="400" y="78" text-anchor="middle" font-size="14.5" font-weight="700" fill="#78350f">Проксі-сервер Squid (:3128)</text>
+
+  <rect x="292" y="104" width="216" height="58" rx="6" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.3"/>
+  <text x="400" y="124" text-anchor="middle" font-size="12.5" font-weight="700" fill="#92400e">1. Перевірка правил ACL</text>
+  <text x="400" y="142" text-anchor="middle" font-size="11" fill="#451a03">src • dstdomain • urlpath_regex • time</text>
+  <text x="400" y="156" text-anchor="middle" font-size="10.5" fill="#78350f">Згори донизу до першого збігу</text>
+
+  <rect x="292" y="172" width="216" height="56" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.3"/>
+  <text x="400" y="192" text-anchor="middle" font-size="12.5" font-weight="700" fill="#14532d">2. Локальний веб-кеш</text>
+  <text x="400" y="210" text-anchor="middle" font-size="11" fill="#166534">TCP_HIT (з кешу) або TCP_MISS (нове)</text>
+
+  <rect x="292" y="238" width="216" height="30" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="400" y="257" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">Аудит: /var/log/squid/access.log</text>
+
+  <!-- Internet / Website -->
+  <rect x="608" y="66" width="168" height="200" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
+  <rect x="608" y="66" width="168" height="38" rx="10" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.8"/>
+  <text x="692" y="90" text-anchor="middle" font-size="14.5" font-weight="700" fill="#14532d">Інтернет / Вебсайт</text>
+  <text x="692" y="130" text-anchor="middle" font-size="12" font-weight="600" fill="#052e16">Зовнішній вебсервер</text>
+  <text x="692" y="150" text-anchor="middle" font-size="12" fill="#166534">HTTP (80) / HTTPS (443)</text>
+  <rect x="622" y="170" width="140" height="46" rx="6" fill="#f0fdf4" stroke="#86efac" stroke-width="1.2"/>
+  <text x="692" y="190" text-anchor="middle" font-size="11.5" font-weight="600" fill="#14532d">Бачить IP проксі</text>
+  <text x="692" y="207" text-anchor="middle" font-size="11" fill="#166534">замість IP клієнта</text>
+  <text x="692" y="246" text-anchor="middle" font-size="11.5" font-weight="600" fill="#15803d">Відповідь 200 OK</text>
+
+  <!-- Arrows Client <-> Squid -->
+  <line x1="192" y1="114" x2="272" y2="114" stroke="#334155" stroke-width="2.2" marker-end="url(#arrow-slate)"/>
+  <text x="234" y="106" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">HTTP-запит</text>
+
+  <line x1="276" y1="184" x2="196" y2="184" stroke="#16a34a" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+  <text x="234" y="176" text-anchor="middle" font-size="11" font-weight="600" fill="#15803d">Сторінка</text>
+  <text x="234" y="198" text-anchor="middle" font-size="10.5" fill="#166534">(HIT / MISS)</text>
+
+  <line x1="276" y1="242" x2="196" y2="242" stroke="#dc2626" stroke-width="2.2" marker-end="url(#arrow-red)"/>
+  <text x="234" y="234" text-anchor="middle" font-size="11" font-weight="700" fill="#b91c1c">403 Forbidden</text>
+  <text x="234" y="256" text-anchor="middle" font-size="10.5" fill="#dc2626">TCP_DENIED</text>
+
+  <!-- Arrows Squid <-> Internet -->
+  <line x1="524" y1="114" x2="604" y2="114" stroke="#334155" stroke-width="2.2" marker-end="url(#arrow-slate)"/>
+  <text x="566" y="106" text-anchor="middle" font-size="11" font-weight="600" fill="#0f172a">Запит</text>
+  <text x="566" y="128" text-anchor="middle" font-size="10.5" fill="#475569">якщо allow</text>
+
+  <line x1="608" y1="184" x2="528" y2="184" stroke="#16a34a" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+  <text x="566" y="176" text-anchor="middle" font-size="11" font-weight="600" fill="#15803d">Відповідь</text>
+  <text x="566" y="198" text-anchor="middle" font-size="10.5" fill="#166534">зберегти в кеш</text>
+
+  <!-- Legend Bar -->
+  <rect x="24" y="294" width="752" height="38" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="40" y="305" width="16" height="16" rx="4" fill="#dcfce7" stroke="#16a34a" stroke-width="1.4"/>
+  <text x="64" y="317" font-size="11.5" font-weight="600" fill="#14532d">TCP_HIT — віддано з локального кешу</text>
+  <rect x="305" y="305" width="16" height="16" rx="4" fill="#dbeafe" stroke="#2563eb" stroke-width="1.4"/>
+  <text x="329" y="317" font-size="11.5" font-weight="600" fill="#1e3a8a">TCP_MISS — завантажено з Інтернету</text>
+  <rect x="556" y="305" width="16" height="16" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+  <text x="580" y="317" font-size="11.5" font-weight="600" fill="#991b1b">TCP_DENIED — заблоковано ACL</text>
+</svg>

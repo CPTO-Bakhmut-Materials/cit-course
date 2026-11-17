@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 440" width="100%" height="auto" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#334155"/>
+    </marker>
+  </defs>
+
+  <rect width="820" height="440" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="410" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Архітектура сервісного стеку Docker Compose</text>
+
+  <!-- Client Browser -->
+  <rect x="260" y="52" width="300" height="48" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <text x="410" y="74" text-anchor="middle" font-size="14" font-weight="700" fill="#78350f">Клієнтський браузер</text>
+  <text x="410" y="92" text-anchor="middle" font-size="11.5" fill="#92400e">Користувачі та оператор підприємства</text>
+
+  <!-- Arrow Client -> Nginx -->
+  <line x1="410" y1="100" x2="410" y2="128" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="422" y="103" width="110" height="20" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="477" y="117" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">порт 80 / HTTP</text>
+
+  <!-- Docker Network Boundary -->
+  <rect x="34" y="134" width="752" height="218" rx="12" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="52" y="155" font-size="12" font-weight="700" fill="#475569">Внутрішня ізольована мережа Docker: company_network (techno_local_net)</text>
+
+  <!-- Nginx -->
+  <rect x="140" y="166" width="540" height="62" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="1.8"/>
+  <text x="410" y="188" text-anchor="middle" font-size="14" font-weight="700" fill="#1e3a8a">Веб-сервер Nginx (Фронтенд / Веб-вітрина)</text>
+  <text x="410" y="207" text-anchor="middle" font-size="11.5" fill="#1e40af">Віддає статичні сторінки клієнтам  •  Перенаправляє запити до внутрішніх сервісів</text>
+
+  <!-- Arrows Nginx -> Adminer & MariaDB -->
+  <path d="M 310 228 L 310 242 L 220 242 L 220 256" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 510 228 L 510 242 L 600 242 L 600 256" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Adminer -->
+  <rect x="60" y="262" width="310" height="76" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
+  <text x="215" y="286" text-anchor="middle" font-size="13.5" font-weight="700" fill="#14532d">Панель керування Adminer</text>
+  <text x="215" y="305" text-anchor="middle" font-size="11.5" font-weight="600" fill="#166534">Порт 8080 для оператора</text>
+  <text x="215" y="324" text-anchor="middle" font-size="11.5" fill="#15803d">Вебінтерфейс керування таблицями БД</text>
+
+  <!-- Arrow Adminer -> MariaDB -->
+  <line x1="370" y1="300" x2="444" y2="300" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="407" y="292" text-anchor="middle" font-size="10.5" font-weight="700" fill="#334155">db:3306</text>
+
+  <!-- MariaDB -->
+  <rect x="450" y="262" width="310" height="76" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="1.8"/>
+  <text x="605" y="286" text-anchor="middle" font-size="13.5" font-weight="700" fill="#7f1d1d">СУБД MariaDB (techno_db)</text>
+  <text x="605" y="305" text-anchor="middle" font-size="11.5" font-weight="600" fill="#991b1b">Порт 3306 ізольований відзовні</text>
+  <text x="605" y="324" text-anchor="middle" font-size="11.5" fill="#991b1b">Зберігання облікових записів та замовлень</text>
+
+  <!-- Arrow MariaDB -> Volume -->
+  <line x1="605" y1="338" x2="605" y2="366" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Persistent Volume -->
+  <rect x="430" y="372" width="350" height="50" rx="10" fill="#e2e8f0" stroke="#475569" stroke-width="1.8"/>
+  <text x="605" y="394" text-anchor="middle" font-size="13" font-weight="700" fill="#0f172a">Постійний том на диску (Volume)</text>
+  <text x="605" y="412" text-anchor="middle" font-size="11.5" fill="#334155">techno_db_data → /var/lib/mysql</text>
+</svg>

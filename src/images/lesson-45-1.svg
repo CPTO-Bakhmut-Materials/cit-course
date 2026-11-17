@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 340" width="100%" height="auto" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrow-slate" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#16a34a"/>
+    </marker>
+  </defs>
+
+  <rect width="840" height="340" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="420" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Золоте правило резервного копіювання «3-2-1» та контроль цілісності</text>
+
+  <!-- Box 1: Original -->
+  <rect x="24" y="60" width="232" height="148" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="1.8"/>
+  <rect x="24" y="60" width="232" height="36" rx="10" fill="#bfdbfe" stroke="#2563eb" stroke-width="1.8"/>
+  <text x="140" y="83" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1e3a8a">1. Оригінал (Копія №1)</text>
+  <text x="140" y="118" text-anchor="middle" font-size="12.5" font-weight="600" fill="#172554">Робочий сервер та БД</text>
+  <text x="140" y="140" text-anchor="middle" font-size="11.5" fill="#1e40af">Носій типу А: локальний</text>
+  <text x="140" y="157" text-anchor="middle" font-size="11.5" fill="#1e40af">SSD/NVMe або RAID-масив</text>
+  <text x="140" y="186" text-anchor="middle" font-size="11.5" font-weight="600" fill="#1d4ed8">Гарячий дамп: sqlite3 .dump</text>
+
+  <!-- Arrow 1 -> 2 -->
+  <line x1="256" y1="134" x2="298" y2="134" stroke="#334155" stroke-width="2.2" marker-end="url(#arrow-slate)"/>
+  <text x="279" y="122" text-anchor="middle" font-size="10.5" font-weight="700" fill="#334155">tar.gz</text>
+  <text x="279" y="152" text-anchor="middle" font-size="10.5" fill="#475569">+ sha256</text>
+
+  <!-- Box 2: Local Backup -->
+  <rect x="304" y="60" width="232" height="148" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="1.8"/>
+  <rect x="304" y="60" width="232" height="36" rx="10" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.8"/>
+  <text x="420" y="83" text-anchor="middle" font-size="13.5" font-weight="700" fill="#14532d">2. Локальний бекап (Копія №2)</text>
+  <text x="420" y="118" text-anchor="middle" font-size="12.5" font-weight="600" fill="#052e16">Мережеве сховище NAS / USB</text>
+  <text x="420" y="140" text-anchor="middle" font-size="11.5" fill="#166534">Носій типу Б: окремий</text>
+  <text x="420" y="157" text-anchor="middle" font-size="11.5" fill="#166534">фізичний накопичувач</text>
+  <text x="420" y="186" text-anchor="middle" font-size="11.5" font-weight="600" fill="#15803d">Швидке відновлення (малий RTO)</text>
+
+  <!-- Arrow 2 -> 3 -->
+  <line x1="536" y1="134" x2="578" y2="134" stroke="#16a34a" stroke-width="2.2" marker-end="url(#arrow-green)"/>
+  <text x="559" y="122" text-anchor="middle" font-size="10.5" font-weight="700" fill="#15803d">rsync</text>
+  <text x="559" y="152" text-anchor="middle" font-size="10.5" fill="#166534">/ gpg</text>
+
+  <!-- Box 3: Off-site Backup -->
+  <rect x="584" y="60" width="232" height="148" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="1.8"/>
+  <rect x="584" y="60" width="232" height="36" rx="10" fill="#fde68a" stroke="#d97706" stroke-width="1.8"/>
+  <text x="700" y="83" text-anchor="middle" font-size="13.5" font-weight="700" fill="#78350f">3. Віддалено (Копія №3)</text>
+  <text x="700" y="118" text-anchor="middle" font-size="12.5" font-weight="600" fill="#451a03">Хмара / Резервний дата-центр</text>
+  <text x="700" y="140" text-anchor="middle" font-size="11.5" fill="#92400e">1 копія Off-site в іншій</text>
+  <text x="700" y="157" text-anchor="middle" font-size="11.5" fill="#92400e">географічній локації</text>
+  <text x="700" y="186" text-anchor="middle" font-size="11.5" font-weight="600" fill="#b45309">Захист від пожежі та Ransomware</text>
+
+  <!-- Bottom Banner: Metrics & Verification -->
+  <rect x="24" y="230" width="792" height="86" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="420" y="255" text-anchor="middle" font-size="14" font-weight="700" fill="#7f1d1d">Контроль надійності: метрики та перевірка відновлення</text>
+  <text x="160" y="282" text-anchor="middle" font-size="12" font-weight="700" fill="#991b1b">RPO (Точка відновлення)</text>
+  <text x="160" y="300" text-anchor="middle" font-size="11" fill="#450a0a">Скільки даних допустимо втратити</text>
+  <line x1="295" y1="266" x2="295" y2="306" stroke="#fca5a5" stroke-width="1.5"/>
+  <text x="425" y="282" text-anchor="middle" font-size="12" font-weight="700" fill="#991b1b">RTO (Час відновлення)</text>
+  <text x="425" y="300" text-anchor="middle" font-size="11" fill="#450a0a">Граничний час простою системи</text>
+  <line x1="555" y1="266" x2="555" y2="306" stroke="#fca5a5" stroke-width="1.5"/>
+  <text x="685" y="282" text-anchor="middle" font-size="12" font-weight="700" fill="#991b1b">Disaster Recovery Drill</text>
+  <text x="685" y="300" text-anchor="middle" font-size="11" fill="#450a0a">Регулярний тест розгортання з бекапу</text>
+</svg>
