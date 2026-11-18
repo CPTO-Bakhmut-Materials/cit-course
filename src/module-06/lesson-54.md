@@ -205,7 +205,11 @@ curl -u admin:admin123 -X MKCOL https://demo.nextcloud.com/remote.php/dav/files/
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-54 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-54 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSeV6VsrDdC1SY-f0VPncTFuiU5wHUGC8K28Meq0KIwV0z74AA/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeV6VsrDdC1SY-f0VPncTFuiU5wHUGC8K28Meq0KIwV0z74AA/viewform?embedded=true" loading="lazy" title="Тест lesson-54">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-54 -->
 
 </div>
 

@@ -369,7 +369,11 @@ echo "=== АВАРІЙНЕ ВІДНОВЛЕННЯ ЗАВЕРШЕНО УСПІШ�
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-45 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-45 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSdwX3j13R7vUYRBg-T_ROLXbyKZv4Hw7VQDDN-IGBCOCfwF6Q/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdwX3j13R7vUYRBg-T_ROLXbyKZv4Hw7VQDDN-IGBCOCfwF6Q/viewform?embedded=true" loading="lazy" title="Тест lesson-45">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-45 -->
 
 </div>
 

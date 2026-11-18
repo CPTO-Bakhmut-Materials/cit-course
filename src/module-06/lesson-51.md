@@ -218,7 +218,11 @@ head -n 5 clients_import.csv
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-51 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-51 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSe-luAPxCzIhbGvwSfphAGPb39w7albPk9V1b1Xgm6HA1DqwA/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe-luAPxCzIhbGvwSfphAGPb39w7albPk9V1b1Xgm6HA1DqwA/viewform?embedded=true" loading="lazy" title="Тест lesson-51">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-51 -->
 
 </div>
 

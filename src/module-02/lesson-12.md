@@ -194,7 +194,11 @@ pos -> customer : 1.3: сигнал_успіху()
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-12 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-12 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSdG3jPJjbnHkEscItOHrPoLgt5IpxBO1Fbup_tU8-dI2G9AQg/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdG3jPJjbnHkEscItOHrPoLgt5IpxBO1Fbup_tU8-dI2G9AQg/viewform?embedded=true" loading="lazy" title="Тест lesson-12">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-12 -->
 
 </div>
 

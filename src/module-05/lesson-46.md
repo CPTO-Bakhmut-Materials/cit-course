@@ -326,7 +326,11 @@ cat failed_services.txt
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-46 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-46 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSfvVMsvSd_jTE4iE1neLJs6cmfOH7_uvUue3AVdxWZfulQQcg/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfvVMsvSd_jTE4iE1neLJs6cmfOH7_uvUue3AVdxWZfulQQcg/viewform?embedded=true" loading="lazy" title="Тест lesson-46">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-46 -->
 
 </div>
 

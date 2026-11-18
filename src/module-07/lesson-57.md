@@ -288,7 +288,11 @@ ls -lh /var/backups/techno_services/
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-57 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-57 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSdLXdhVFmu64p9ZHPOaoNQX5zvyqrbxAFPQO6gZy7gX63hcyg/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdLXdhVFmu64p9ZHPOaoNQX5zvyqrbxAFPQO6gZy7gX63hcyg/viewform?embedded=true" loading="lazy" title="Тест lesson-57">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-57 -->
 
 </div>
 

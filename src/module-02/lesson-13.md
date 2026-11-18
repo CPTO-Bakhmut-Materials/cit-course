@@ -195,7 +195,11 @@ stateDiagram-v2
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-13 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-13 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSfgp3cdAy7YPztWxmWKGTRgSOXa5mTyE0LF2_2uVysj5NMxxA/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfgp3cdAy7YPztWxmWKGTRgSOXa5mTyE0LF2_2uVysj5NMxxA/viewform?embedded=true" loading="lazy" title="Тест lesson-13">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-13 -->
 
 </div>
 

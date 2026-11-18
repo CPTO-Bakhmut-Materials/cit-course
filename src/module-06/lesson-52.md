@@ -222,7 +222,11 @@ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  memo_access_12
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-52 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-52 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLScnR44Ky9xjnHdZmWIKIa0ngMxe0O2JWaG4LSWDg97NLArIGg/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScnR44Ky9xjnHdZmWIKIa0ngMxe0O2JWaG4LSWDg97NLArIGg/viewform?embedded=true" loading="lazy" title="Тест lesson-52">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-52 -->
 
 </div>
 

@@ -294,7 +294,11 @@ chmod +x deploy_operator_bundle.sh
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-25 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-25 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLScqLQB2blWEgchpo6G3dItW1no5uyeBIsKyscSSQe96LQe1Mg/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScqLQB2blWEgchpo6G3dItW1no5uyeBIsKyscSSQe96LQe1Mg/viewform?embedded=true" loading="lazy" title="Тест lesson-25">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-25 -->
 
 </div>
 

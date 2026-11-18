@@ -212,7 +212,11 @@ $$P_{\text{БЖ}} = (TDP_{\text{CPU}} + TGP_{\text{GPU}} + P_{\text{інші}}) 
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-26 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-26 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSdtd0V4wxs7Gv-OYYpUFQEY4OGMjgisSXCRqxvzLRdRmKVGmQ/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdtd0V4wxs7Gv-OYYpUFQEY4OGMjgisSXCRqxvzLRdRmKVGmQ/viewform?embedded=true" loading="lazy" title="Тест lesson-26">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-26 -->
 
 </div>
 

@@ -226,7 +226,11 @@ cd ~ && rm -rf ~/info_verification
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-06 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-06 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSdN-lxoEE2YqhK6cLyvDwNtih5aHE0jIYT9O-dYDEJH3lp4BQ/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdN-lxoEE2YqhK6cLyvDwNtih5aHE0jIYT9O-dYDEJH3lp4BQ/viewform?embedded=true" loading="lazy" title="Тест lesson-06">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-06 -->
 
 </div>
 

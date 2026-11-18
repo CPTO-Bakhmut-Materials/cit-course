@@ -228,7 +228,11 @@ Connection: keep-alive
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-36 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-36 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSfrgEd80JHVbW363stEPCA9D-RPOZO3qW3UoT0up1PqlZr2mg/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfrgEd80JHVbW363stEPCA9D-RPOZO3qW3UoT0up1PqlZr2mg/viewform?embedded=true" loading="lazy" title="Тест lesson-36">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-36 -->
 
 </div>
 

@@ -221,7 +221,11 @@ docker rm lab-web custom-web
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-40 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-40 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSdIiAyUjYHEuTQvHPn9nAR2XaoL9WCQK3QiO8lIuvRXHK1FpA/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdIiAyUjYHEuTQvHPn9nAR2XaoL9WCQK3QiO8lIuvRXHK1FpA/viewform?embedded=true" loading="lazy" title="Тест lesson-40">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-40 -->
 
 </div>
 

@@ -173,7 +173,11 @@ $$\text{Потужність БЖ (Вт)} = (\text{TDP}_{\text{CPU}} + \text{TDP
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-18 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-18 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSc8A-uZnN-xOCcSiLo_aS2UaqPTG2sNWftSz4f8kLV0STq5-g/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc8A-uZnN-xOCcSiLo_aS2UaqPTG2sNWftSz4f8kLV0STq5-g/viewform?embedded=true" loading="lazy" title="Тест lesson-18">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-18 -->
 
 </div>
 

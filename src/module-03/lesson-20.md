@@ -173,7 +173,11 @@ OpenGL version string: 4.6.0 NVIDIA 550.54.14
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-20 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-20 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLScC3QVSUofkrGK3bJqa_AGzuHyJDQkPZfgVq2H0WwxnDJy4Jw/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScC3QVSUofkrGK3bJqa_AGzuHyJDQkPZfgVq2H0WwxnDJy4Jw/viewform?embedded=true" loading="lazy" title="Тест lesson-20">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-20 -->
 
 </div>
 

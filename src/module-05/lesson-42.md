@@ -299,7 +299,11 @@ killall python3 2>/dev/null || pkill -f "http.server 8080"
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-42 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-42 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSdLGqTruASGlhcCtaowHF633E5SAaYr2-NyuSUCuBQ5mK7D-w/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdLGqTruASGlhcCtaowHF633E5SAaYr2-NyuSUCuBQ5mK7D-w/viewform?embedded=true" loading="lazy" title="Тест lesson-42">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-42 -->
 
 </div>
 

@@ -180,7 +180,11 @@ lspci | grep -i -E "ethernet|network"
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-17 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-17 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSdeBQxqzndX5F0gsxrjGD5fZkGM9WHDbb81HPwqHE9UI4aUYQ/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdeBQxqzndX5F0gsxrjGD5fZkGM9WHDbb81HPwqHE9UI4aUYQ/viewform?embedded=true" loading="lazy" title="Тест lesson-17">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-17 -->
 
 </div>
 

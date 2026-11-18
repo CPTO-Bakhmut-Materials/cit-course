@@ -189,7 +189,11 @@ sequenceDiagram
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-11 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-11 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSf-ipZf4NYX1TTnvh9rciIfSDPmAL9qtstklogJE101eLE82Q/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf-ipZf4NYX1TTnvh9rciIfSDPmAL9qtstklogJE101eLE82Q/viewform?embedded=true" loading="lazy" title="Тест lesson-11">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-11 -->
 
 </div>
 

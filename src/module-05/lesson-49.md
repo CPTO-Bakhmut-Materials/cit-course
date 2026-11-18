@@ -273,7 +273,11 @@ ls -ld /srv/public_drop
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-49 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-49 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSeuu4sKkra3uEzuPzFYJgJ0MkPWGvRLg8IfOt4K1heR9_ADeg/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeuu4sKkra3uEzuPzFYJgJ0MkPWGvRLg8IfOt4K1heR9_ADeg/viewform?embedded=true" loading="lazy" title="Тест lesson-49">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-49 -->
 
 </div>
 

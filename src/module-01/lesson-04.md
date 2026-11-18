@@ -230,7 +230,11 @@ eth0             UP             192.168.1.45/24 fe80::a00:27ff:fe4e:66a1/64
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-04 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-04 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSfLMdKysqzn4vbkUbY3DWePg3KwjExMSOoA4_0qXfxrGju_dg/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfLMdKysqzn4vbkUbY3DWePg3KwjExMSOoA4_0qXfxrGju_dg/viewform?embedded=true" loading="lazy" title="Тест lesson-04">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-04 -->
 
 </div>
 

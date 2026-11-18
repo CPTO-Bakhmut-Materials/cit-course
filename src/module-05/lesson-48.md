@@ -230,7 +230,11 @@ sudo smartctl -A /dev/sda | grep -E "Power_On_Hours|Power_Cycle_Count|Reallocate
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-48 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-48 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSed5jqdDwh0G4lj6mf7ixZGLC2R-imyFRps8Ao4I-Naiy7LXg/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSed5jqdDwh0G4lj6mf7ixZGLC2R-imyFRps8Ao4I-Naiy7LXg/viewform?embedded=true" loading="lazy" title="Тест lesson-48">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-48 -->
 
 </div>
 

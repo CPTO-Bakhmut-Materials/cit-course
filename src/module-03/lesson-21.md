@@ -299,7 +299,11 @@ chmod +x server_audit.sh
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-21 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-21 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSccp9Pal1myjLaM0jzprVZba4k_DLRHpZ2yWDTzRvoof88YTw/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSccp9Pal1myjLaM0jzprVZba4k_DLRHpZ2yWDTzRvoof88YTw/viewform?embedded=true" loading="lazy" title="Тест lesson-21">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-21 -->
 
 </div>
 

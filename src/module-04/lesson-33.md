@@ -328,7 +328,11 @@ sudo systemctl reload smbd
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-33 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-33 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSdONl3Lbhd4KPGDgH2vdEkrLitK035to3OrAOjEIYqs1WFEkQ/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdONl3Lbhd4KPGDgH2vdEkrLitK035to3OrAOjEIYqs1WFEkQ/viewform?embedded=true" loading="lazy" title="Тест lesson-33">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-33 -->
 
 </div>
 

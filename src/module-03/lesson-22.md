@@ -286,7 +286,11 @@ python3 dc_analyzer.py
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-22 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-22 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLScW5nVxpsi3Dp9eNgK3E0eBMRB7eQgn7N-xQ0Ff8qnHikjxmg/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScW5nVxpsi3Dp9eNgK3E0eBMRB7eQgn7N-xQ0Ff8qnHikjxmg/viewform?embedded=true" loading="lazy" title="Тест lesson-22">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-22 -->
 
 </div>
 

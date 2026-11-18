@@ -198,7 +198,11 @@ df -h / | awk 'NR==2 {print "Вільне місце на диску:", $4, "з"
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-01 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-01 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLScf2n3wuh7oWPs5T32cGxoafn4dP7d2OSTbk0coBZrM77acsQ/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScf2n3wuh7oWPs5T32cGxoafn4dP7d2OSTbk0coBZrM77acsQ/viewform?embedded=true" loading="lazy" title="Тест lesson-01">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-01 -->
 
 </div>
 

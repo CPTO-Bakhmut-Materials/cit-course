@@ -244,7 +244,11 @@ mariadb -u root -p new_database < company_backup.sql
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-37 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-37 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSe6A7sbpL4rQVB1rijpXOlz2w2y8DprBd48Y9fO6nlVEN2g4Q/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe6A7sbpL4rQVB1rijpXOlz2w2y8DprBd48Y9fO6nlVEN2g4Q/viewform?embedded=true" loading="lazy" title="Тест lesson-37">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-37 -->
 
 </div>
 

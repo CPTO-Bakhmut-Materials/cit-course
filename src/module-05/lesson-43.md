@@ -241,7 +241,11 @@ systemctl status zabbix-agent --no-pager
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-43 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-43 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSfP37OsG87kLPEFASePRV5JJkOejxponWgQu78Ab717lMl4Pw/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfP37OsG87kLPEFASePRV5JJkOejxponWgQu78Ab717lMl4Pw/viewform?embedded=true" loading="lazy" title="Тест lesson-43">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-43 -->
 
 </div>
 

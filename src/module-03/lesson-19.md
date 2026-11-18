@@ -176,7 +176,11 @@ lspci -v -s $(lspci | grep -i vga | cut -d " " -f 1) | grep -i "memory at"
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-19 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-19 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSfP0p5kIY2R-j9VmZdLsy06A0byvsX50mrUR6o_CMFpJDbtxA/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfP0p5kIY2R-j9VmZdLsy06A0byvsX50mrUR6o_CMFpJDbtxA/viewform?embedded=true" loading="lazy" title="Тест lesson-19">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-19 -->
 
 </div>
 

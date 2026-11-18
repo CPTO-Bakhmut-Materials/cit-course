@@ -199,7 +199,11 @@ tail -n +2 clients.csv | awk -F',' '{print $2 "," $3}' | sort | uniq -c | grep -
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-02 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-02 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSfHgnSVl0f_GVjBko-_sUu8X874grxa9IykC6PWNlB5Gsv9cg/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfHgnSVl0f_GVjBko-_sUu8X874grxa9IykC6PWNlB5Gsv9cg/viewform?embedded=true" loading="lazy" title="Тест lesson-02">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-02 -->
 
 </div>
 

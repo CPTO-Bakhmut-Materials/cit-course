@@ -272,7 +272,11 @@ sudo systemctl restart vsftpd
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-34 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-34 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSe_r2XKyv0XrNYwj10J7CmSjPpaeujjQjjd6tOMpJhmYMEZFA/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe_r2XKyv0XrNYwj10J7CmSjPpaeujjQjjd6tOMpJhmYMEZFA/viewform?embedded=true" loading="lazy" title="Тест lesson-34">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-34 -->
 
 </div>
 

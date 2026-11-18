@@ -215,7 +215,11 @@ flowchart LR
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-08 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-08 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSc20-r6IIY8IKc6wli0Wgsc98ya8SJUxn83Qi7n6a-oq-6OCQ/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc20-r6IIY8IKc6wli0Wgsc98ya8SJUxn83Qi7n6a-oq-6OCQ/viewform?embedded=true" loading="lazy" title="Тест lesson-08">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-08 -->
 
 </div>
 

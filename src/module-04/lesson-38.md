@@ -207,7 +207,11 @@ From: student1 <student1@lab.local>
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-38 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-38 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSfwJXI9h-e2GPY1Ux1nDWkJuK3Y0oFSu7eAKM8ZdZLmUT1DWg/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfwJXI9h-e2GPY1Ux1nDWkJuK3Y0oFSu7eAKM8ZdZLmUT1DWg/viewform?embedded=true" loading="lazy" title="Тест lesson-38">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-38 -->
 
 </div>
 

@@ -290,7 +290,11 @@ ss -tulpn | grep -E ':(80|8080)'
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-56 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-56 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSeiojyTq3WLOF1w6n-rY60-0mUts0eTbt_54bmrXzFVcAiE3Q/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeiojyTq3WLOF1w6n-rY60-0mUts0eTbt_54bmrXzFVcAiE3Q/viewform?embedded=true" loading="lazy" title="Тест lesson-56">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-56 -->
 
 </div>
 

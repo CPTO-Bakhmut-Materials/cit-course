@@ -205,7 +205,11 @@ qemu-img snapshot -d snapshot-update srv-node01.qcow2
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-39 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-39 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLScmUxzFKHGxi2N9nLmIILUR5CuNyo8ijmF-HBd7_tfignG7Zw/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScmUxzFKHGxi2N9nLmIILUR5CuNyo8ijmF-HBd7_tfignG7Zw/viewform?embedded=true" loading="lazy" title="Тест lesson-39">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-39 -->
 
 </div>
 

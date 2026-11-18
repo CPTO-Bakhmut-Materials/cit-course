@@ -185,7 +185,11 @@ sha256sum: WARNING: 1 computed checksum did NOT match
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-05 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-05 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSfr8sZNZGHlMl0gAbfdHioEqtb_15baBbFiMb0A0gh5rh4EXA/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfr8sZNZGHlMl0gAbfdHioEqtb_15baBbFiMb0A0gh5rh4EXA/viewform?embedded=true" loading="lazy" title="Тест lesson-05">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-05 -->
 
 </div>
 

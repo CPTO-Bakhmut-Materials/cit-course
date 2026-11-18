@@ -274,7 +274,11 @@ grep ' 404 ' web_access.log | awk '{print $7}' | sort | uniq -c | sort -nr
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-44 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-44 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLScXznuX1dFVlBfbuqGBtvaiQYI3EywgeSAevpDnUOcFjojHGg/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScXznuX1dFVlBfbuqGBtvaiQYI3EywgeSAevpDnUOcFjojHGg/viewform?embedded=true" loading="lazy" title="Тест lesson-44">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-44 -->
 
 </div>
 

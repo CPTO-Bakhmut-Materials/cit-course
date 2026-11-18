@@ -219,7 +219,11 @@ Linux — родина відкритих, Unix-подібних операці�
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-28 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-28 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLScG_KsVKEIBQZw6DQ9cAvPm5nirUjzUu4fvS1wvKY24Go-8lQ/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScG_KsVKEIBQZw6DQ9cAvPm5nirUjzUu4fvS1wvKY24Go-8lQ/viewform?embedded=true" loading="lazy" title="Тест lesson-28">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-28 -->
 
 </div>
 

@@ -219,7 +219,11 @@ curl: (7) Failed to connect to 127.0.0.1 port 8999: Connection refused
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-03 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-03 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSdgLv-FYAf8BexWuyCvCH3G9M3ZAaatlGsFLfKA3dB8vrMBgA/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdgLv-FYAf8BexWuyCvCH3G9M3ZAaatlGsFLfKA3dB8vrMBgA/viewform?embedded=true" loading="lazy" title="Тест lesson-03">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-03 -->
 
 </div>
 

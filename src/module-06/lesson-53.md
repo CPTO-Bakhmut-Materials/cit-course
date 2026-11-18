@@ -221,7 +221,11 @@ Get-CimInstance Win32_Processor | Select-Object Name, NumberOfCores
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-53 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-53 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSd3Zsl2VjgiIya-4Fu_ZpWQseSKIRMPBhLfsC3f1djwqO_E9A/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd3Zsl2VjgiIya-4Fu_ZpWQseSKIRMPBhLfsC3f1djwqO_E9A/viewform?embedded=true" loading="lazy" title="Тест lesson-53">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-53 -->
 
 </div>
 

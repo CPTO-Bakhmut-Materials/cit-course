@@ -284,7 +284,11 @@ chmod +x net_doctor.sh
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-24 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-24 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLScOVz1qAu-RyqRxb16ymyshtlJFLXptGR4zjvuA3901NhJyIg/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScOVz1qAu-RyqRxb16ymyshtlJFLXptGR4zjvuA3901NhJyIg/viewform?embedded=true" loading="lazy" title="Тест lesson-24">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-24 -->
 
 </div>
 

@@ -249,7 +249,11 @@ req ||--|{ log : "має записи в журналі"
 
 10 запитань за матеріалом уроку. На початку тесту вкажіть **прізвище, ім’я та групу**.
 
-🔗 <!-- GOOGLE_FORM_URL:lesson-16 --> *(Посилання на Google Форму буде додано після масового імпорту тесту)*
+<!-- GOOGLE_FORM_START:lesson-16 -->
+[Відкрити тест у новій вкладці](https://docs.google.com/forms/d/e/1FAIpQLSfc8Bzm7KyQPfbisnBZUbBiiYPKm2eVuesKqv98zoucfnPzzA/viewform)
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfc8Bzm7KyQPfbisnBZUbBiiYPKm2eVuesKqv98zoucfnPzzA/viewform?embedded=true" loading="lazy" title="Тест lesson-16">Завантаження…</iframe>
+<!-- GOOGLE_FORM_END:lesson-16 -->
 
 </div>
 
