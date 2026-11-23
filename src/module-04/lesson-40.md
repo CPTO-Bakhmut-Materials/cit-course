@@ -21,6 +21,8 @@
 
 ## Що знадобиться
 
+- 📊 **Презентація до уроку:** [lesson-40-docker.pptx](../presentations/lesson-40-docker.pptx)
+
 - Комп'ютер або віртуальна машина з ОС Linux (Ubuntu, Debian тощо).
 - Встановлений рушій Docker (пакети `docker.io` або `docker-ce`).
 - Користувач, доданий до групи `docker` (для роботи з командами без `sudo`).
